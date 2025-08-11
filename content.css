@@ -1,3 +1,4 @@
+/* 定义所有字体 */
 @font-face {
   font-family: 'LXGWWenKaiGB-Regular';
   src: url(chrome-extension://__MSG_@@extension_id__/LXGWWenKaiGB-Regular.woff2) format('woff2');
@@ -6,25 +7,31 @@
   font-display: swap;
 }
 
-/* 强制所有元素使用指定字体 */
-* {
+@font-face {
+  font-family: 'LXGWWenKaiTC-Regular';
+  src: url(chrome-extension://__MSG_@@extension_id__/LXGWWenKaiTC-Regular.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KleeOne-Regular';
+  src: url(chrome-extension://__MSG_@@extension_id__/KleeOne-Regular.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 语言字体类 */
+.font-zh_CN, .font-ko {
   font-family: 'LXGWWenKaiGB-Regular', sans-serif !important;
 }
 
-/* 特别针对常见的文本元素 */
-body, p, div, span, h1, h2, h3, h4, h5, h6, 
-a, li, td, th, input, textarea, button, select, option,
-.text, .content, .title, .description {
-  font-family: 'LXGWWenKaiGB-Regular', sans-serif !important;
+.font-zh_TW {
+  font-family: 'LXGWWenKaiTC-Regular', sans-serif !important;
 }
 
-/* 确保输入框也使用指定字体 */
-input[type="text"], input[type="password"], input[type="email"], 
-input[type="search"], textarea, select {
-  font-family: 'LXGWWenKaiGB-Regular', sans-serif !important;
-}
-
-/* 针对一些可能使用特殊字体的元素 */
-code, pre, kbd, samp {
-  font-family: 'LXGWWenKaiGB-Regular', monospace !important;
+.font-ja, .font-en, .font-ms {
+  font-family: 'KleeOne-Regular', sans-serif !important;
 }

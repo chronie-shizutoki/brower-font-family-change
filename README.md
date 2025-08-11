@@ -1,10 +1,10 @@
 # Chrome Browser Font Force Plugin
 
-This is a Chrome browser extension that can force all web pages to use the LXGWWenKaiGB-Regular font.
+This is a Chrome browser extension that can force all web pages to use the custom font.
 
 ## Features
 
-- 🎨 Force all web pages to use the LXGWWenKaiGB-Regular font
+- 🎨 Force all web pages to use the custom font
 - 🔄 Real-time monitoring of page changes to ensure that dynamically loaded content also uses the specified font
 - 🎛️ Enable/disable the font forcing function via the extension icon
 - 💪 Use the `!important` rule to ensure the highest font priority
@@ -30,7 +30,7 @@ This is a Chrome browser extension that can force all web pages to use the LXGWW
 ## Usage
 
 1. After installing the extension, an icon will appear in the browser toolbar
-2. Visit any web page, and the font will be automatically forced to LXGWWenKaiGB-Regular
+2. Visit any web page, and the font will be automatically forced to the custom font
 3. Click the extension icon to open the control panel
 4. You can enable or disable the font forcing function in the control panel
 
@@ -55,9 +55,12 @@ This is a Chrome browser extension that can force all web pages to use the LXGWW
 ├── content.js                # Content script
 ├── popup.html                # Popup window interface
 ├── popup.js                  # Popup window logic
-├── LXGWWenKaiGB-Regular.woff2 # Font file
-├── OFL.txt                   # Derived font license
-├── OFL_origin.txt            # Original font license
+├── LXGWWenKaiGB-Regular.woff2 # Font file (GB,KO)
+├── LXGWWenKaiTC-Regular.woff2 # Font file (TC)
+├── KleeOne-Regular.woff2     # Font file (JP,others)
+├── OFL_GB.txt                # Derived font license (GB,KO)
+├── OFL_TC.txt                # Derived font license (TC)
+├── OFL_origin_JP.txt         # Original font license (JP,others)
 └── README.md                 # Documentation
 ```
 

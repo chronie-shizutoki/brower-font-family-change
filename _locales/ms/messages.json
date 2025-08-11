@@ -4,7 +4,7 @@
     "description": "Extension name"
   },
   "extensionDescription": {
-    "message": "Paksa halaman web menggunakan font LXGWWenKaiGB-Regular dengan sokongan mod gelap automatik",
+    "message": "Paksa halaman web menggunakan font KleeOne-Regular dengan sokongan mod gelap automatik",
     "description": "Extension description"
   },
   "headerTitle": {
@@ -20,7 +20,7 @@
     "description": "Current font label"
   },
   "fontName": {
-    "message": "LXGWWenKaiGB-Regular",
+    "message": "KleeOne-Regular",
     "description": "Font name"
   },
   "forceFont": {

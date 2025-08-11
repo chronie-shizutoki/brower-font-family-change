@@ -4,7 +4,7 @@
     "description": "Extension name"
   },
   "extensionDescription": {
-    "message": "ウェブページのフォントをLXGWWenKaiGB-Regularに強制設定、自動ダークモード対応",
+    "message": "ウェブページのフォントをKleeOne-Regularに強制設定、自動ダークモード対応",
     "description": "Extension description"
   },
   "headerTitle": {
@@ -20,7 +20,7 @@
     "description": "Current font label"
   },
   "fontName": {
-    "message": "LXGWWenKaiGB-Regular",
+    "message": "KleeOne-Regular",
     "description": "Font name"
   },
   "forceFont": {

@@ -4,7 +4,7 @@
     "description": "Extension name"
   },
   "extensionDescription": {
-    "message": "Force web pages to use LXGWWenKaiGB-Regular font with automatic dark mode support",
+    "message": "Force web pages to use KleeOne-Regular font with automatic dark mode support",
     "description": "Extension description"
   },
   "headerTitle": {
@@ -20,7 +20,7 @@
     "description": "Current font label"
   },
   "fontName": {
-    "message": "LXGWWenKaiGB-Regular",
+    "message": "KleeOne-Regular",
     "description": "Font name"
   },
   "forceFont": {

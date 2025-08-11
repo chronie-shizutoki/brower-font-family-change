@@ -4,7 +4,7 @@
     "description": "Extension name"
   },
   "extensionDescription": {
-    "message": "強制頁面字型設定為LXGWWenKaiGB-Regular，支援自動深色模式",
+    "message": "強制頁面字型設定為LXGWWenKaiTC-Regular，支援自動深色模式",
     "description": "Extension description"
   },
   "headerTitle": {
@@ -20,7 +20,7 @@
     "description": "Current font label"
   },
   "fontName": {
-    "message": "LXGWWenKaiGB-Regular",
+    "message": "LXGWWenKaiTC-Regular",
     "description": "Font name"
   },
   "forceFont": {

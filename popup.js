@@ -170,12 +170,36 @@ function initializeI18n() {
             languageSelect.value = savedLanguage;
         }
         
+        // 立即更新字体（不需要等待翻译加载完成）
+        updateFontFamily(savedLanguage);
+        
         // 加载翻译
         loadTranslations(savedLanguage, function() {
             // 应用翻译
             applyTranslations(savedLanguage);
         });
     });
+}
+
+// 根据语言更新字体
+function updateFontFamily(language) {
+    const body = document.body;
+    
+    // 字体映射关系
+    const fontMap = {
+        'zh_CN': 'LXGWWenKaiGB-Regular',
+        'zh_TW': 'LXGWWenKaiTC-Regular',
+        'ko': 'LXGWWenKaiGB-Regular',
+        'ja': 'KleeOne-Regular',
+        'en': 'KleeOne-Regular',
+        'ms': 'KleeOne-Regular'
+    };
+    
+    // 获取当前语言对应的字体
+    const font = fontMap[language] || 'KleeOne-Regular';
+    
+    // 设置body的字体
+    body.style.fontFamily = `${font}, sans-serif`;
 }
 
 function applyTranslations(language) {
@@ -193,6 +217,9 @@ function applyTranslations(language) {
     
     // 更新状态文本
     updateStatusText(language);
+    
+    // 更新字体
+    updateFontFamily(language);
 }
 
 function changeLanguage() {
@@ -204,6 +231,18 @@ function changeLanguage() {
         // 加载新语言的翻译并应用
         loadTranslations(selectedLanguage, function() {
             applyTranslations(selectedLanguage);
+        });
+        
+        // 通知内容脚本语言变化
+        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+            if (tabs[0]) {
+                chrome.tabs.sendMessage(tabs[0].id, {
+                    action: 'changeLanguage',
+                    language: selectedLanguage
+                }).catch(() => {
+                    // 忽略错误，可能是页面还没有加载内容脚本
+                });
+            }
         });
     });
 }

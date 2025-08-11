@@ -22,8 +22,12 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["LXGWWenKaiGB-Regular.woff2"],
-      "matches": ["<all_urls>"]
+        "resources": [
+          "LXGWWenKaiGB-Regular.woff2",
+          "LXGWWenKaiTC-Regular.woff2",
+          "KleeOne-Regular.woff2"
+        ],
+        "matches": ["<all_urls>"]
     }
   ],
   "action": {
