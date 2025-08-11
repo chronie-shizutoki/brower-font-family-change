@@ -110,7 +110,7 @@
             padding: 24px 20px;
         }
 
-        .status-card {
+        .status-card, .language-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 12px;
@@ -118,6 +118,55 @@
             margin-bottom: 20px;
             box-shadow: var(--shadow-light);
             transition: all 0.3s ease;
+        }
+
+        .language-card {
+            margin-bottom: 0;
+        }
+
+        .language-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .language-info {
+            flex: 1;
+        }
+
+        .language-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin: 0 0 4px 0;
+        }
+
+        .language-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .language-select {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 13px;
+            color: var(--text-primary);
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        .language-select:hover {
+            border-color: var(--btn-primary);
+        }
+
+        .language-select:focus {
+            border-color: var(--btn-primary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
 
         .status-card:hover {
@@ -312,8 +361,8 @@
     <div class="header">
         <div class="header-content">
             <div class="logo">🎨</div>
-            <h1 class="title">字体强制器</h1>
-            <p class="subtitle">Font Force Extension</p>
+            <h1 class="title" data-i18n="headerTitle">字体强制器</h1>
+            <p class="subtitle" data-i18n="headerSubtitle">Font Force Extension</p>
         </div>
     </div>
 
@@ -322,15 +371,15 @@
             <div class="font-info">
                 <div class="font-icon">Aa</div>
                 <div class="font-details">
-                    <h3>当前字体</h3>
-                    <div class="font-name">LXGWWenKaiGB-Regular</div>
+                    <h3 data-i18n="currentFont">当前字体</h3>
+                    <div class="font-name" data-i18n="fontName">LXGWWenKaiGB-Regular</div>
                 </div>
             </div>
             
             <div class="toggle-section">
                 <div class="toggle-info">
-                    <div class="toggle-label">强制字体</div>
-                    <div class="toggle-desc">在所有网页上应用指定字体</div>
+                    <div class="toggle-label" data-i18n="forceFont">强制字体</div>
+                    <div class="toggle-desc" data-i18n="forceFontDesc">在所有网页上应用指定字体</div>
                 </div>
                 <button id="toggleBtn" class="toggle-switch active">
                 </button>
@@ -338,15 +387,32 @@
 
             <div class="status-indicator">
                 <div id="statusDot" class="status-dot"></div>
-                <div id="statusText" class="status-text">字体强制已启用</div>
+                <div id="statusText" class="status-text" data-i18n="statusEnabled">字体强制已启用</div>
+            </div>
+        </div>
+
+        <div class="language-card">
+            <div class="language-section">
+                <div class="language-info">
+                    <div class="language-label" data-i18n="languageSettings">语言设置</div>
+                    <div class="language-desc" data-i18n="selectLanguage">选择语言</div>
+                </div>
+                <select id="languageSelect" class="language-select">
+                    <option value="zh_CN">简体中文</option>
+                    <option value="zh_TW">繁體中文</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                    <option value="ms">Bahasa Melayu</option>
+                </select>
             </div>
         </div>
     </div>
 
     <div class="footer">
         <p class="footer-text">
-            版本 <span class="version">1.0.0</span> • 支持自动深色模式<br>
-            适配所有基于 Chromium 的浏览器
+            <span data-i18n="version">版本</span> <span class="version">1.0.1</span> • <span data-i18n="darkModeSupport">支持自动深色模式</span><br>
+            <span data-i18n="browserCompatibility">适配所有基于 Chromium 的浏览器</span>
         </p>
     </div>
     

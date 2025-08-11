@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "폰트 강제기",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "웹페이지 폰트를 LXGWWenKaiGB-Regular로 강제 설정, 자동 다크모드 지원",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "폰트 강제기",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "Font Force Extension",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "현재 폰트",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "LXGWWenKaiGB-Regular",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "폰트 강제",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "모든 웹페이지에 지정된 폰트 적용",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "폰트 강제가 활성화됨",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "폰트 강제가 비활성화됨",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "버전",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "자동 다크모드 지원",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "모든 Chromium 기반 브라우저 호환",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "폰트 강제 활성화",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "폰트 강제 비활성화",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "언어 설정",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "언어 선택",
+    "description": "Select language label"
+  }
+}

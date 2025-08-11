@@ -1,11 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "强制字体设置",
-  "version": "1.0",
-  "description": "强制页面字体设置为LXGWWenKaiGB-Regular",
+  "name": "__MSG_extensionName__",
+  "version": "1.0.1",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "zh_CN",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -26,6 +28,6 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "强制字体设置"
+    "default_title": "__MSG_extensionName__"
   }
 }

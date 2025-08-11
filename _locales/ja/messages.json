@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "フォント強制器",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "ウェブページのフォントをLXGWWenKaiGB-Regularに強制設定、自動ダークモード対応",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "フォント強制器",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "Font Force Extension",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "現在のフォント",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "LXGWWenKaiGB-Regular",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "フォント強制",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "すべてのウェブページに指定フォントを適用",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "フォント強制が有効",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "フォント強制が無効",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "バージョン",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "自動ダークモード対応",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "すべてのChromiumベースブラウザに対応",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "フォント強制を有効にする",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "フォント強制を無効にする",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "言語設定",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "言語を選択",
+    "description": "Select language label"
+  }
+}

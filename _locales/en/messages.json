@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Font Forcer",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Force web pages to use LXGWWenKaiGB-Regular font with automatic dark mode support",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Font Forcer",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "Font Force Extension",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Current Font",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "LXGWWenKaiGB-Regular",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Force Font",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Apply specified font to all web pages",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Font forcing enabled",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Font forcing disabled",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Version",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatic dark mode support",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Compatible with all Chromium-based browsers",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Enable font forcing",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Disable font forcing",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Language Settings",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Select Language",
+    "description": "Select language label"
+  }
+}

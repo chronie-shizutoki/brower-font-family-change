@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "字体强制器",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "强制页面字体设置为LXGWWenKaiGB-Regular，支持自动深色模式",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "字体强制器",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "Font Force Extension",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "当前字体",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "LXGWWenKaiGB-Regular",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "强制字体",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "在所有网页上应用指定字体",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "字体强制已启用",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "字体强制已禁用",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "版本",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "支持自动深色模式",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "适配所有基于 Chromium 的浏览器",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "启用字体强制",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "禁用字体强制",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "语言设置",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "选择语言",
+    "description": "Select language label"
+  }
+}
