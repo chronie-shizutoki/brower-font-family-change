@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "强制字体设置",
+  "version": "1.0",
+  "description": "强制页面字体设置为LXGWWenKaiGB-Regular",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["LXGWWenKaiGB-Regular.woff2"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "强制字体设置"
+  }
+}
