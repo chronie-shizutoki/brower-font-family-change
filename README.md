@@ -1,70 +1,85 @@
-# Chrome浏览器字体强制插件
+# Chrome Browser Font Force Plugin
 
-这是一个Chrome浏览器插件，可以强制所有网页使用LXGWWenKaiGB-Regular字体。
+This is a Chrome browser extension that can force all web pages to use the LXGWWenKaiGB-Regular font.
 
-## 功能特点
+## Features
 
-- 🎨 强制所有网页使用LXGWWenKaiGB-Regular字体
-- 🔄 实时监听页面变化，确保动态加载的内容也使用指定字体
-- 🎛️ 可通过插件图标开启/关闭字体强制功能
-- 💪 使用!important规则确保字体优先级最高
-- 🚀 支持所有网站，包括输入框、按钮等表单元素
+- 🎨 Force all web pages to use the LXGWWenKaiGB-Regular font
+- 🔄 Real-time monitoring of page changes to ensure that dynamically loaded content also uses the specified font
+- 🎛️ Enable/disable the font forcing function via the extension icon
+- 💪 Use the `!important` rule to ensure the highest font priority
+- 🚀 Support all websites, including form elements such as input boxes and buttons
 
-## 安装方法
+## Installation Methods
 
-### 方法一：开发者模式安装（推荐）
+### Method 1: Install in Developer Mode (Recommended)
 
-1. 打开Chrome浏览器
-2. 在地址栏输入 `chrome://extensions/` 并回车
-3. 打开右上角的"开发者模式"开关
-4. 点击"加载已解压的扩展程序"
-5. 选择包含插件文件的文件夹（即当前文件夹）
-6. 插件安装完成，会在扩展程序列表中显示
+1. Open the Chrome browser
+2. Enter `chrome://extensions/` in the address bar and press Enter
+3. Turn on the "Developer mode" switch in the upper-right corner
+4. Click "Load unpacked"
+5. Select the folder containing the extension files (i.e., the current folder)
+6. Once the installation is complete, the extension will be displayed in the extensions list
 
-### 方法二：打包安装
+### Method 2: Install via Packaged File
 
-1. 在Chrome扩展程序页面点击"打包扩展程序"
-2. 选择插件文件夹，生成.crx文件
-3. 将.crx文件拖拽到Chrome扩展程序页面进行安装
+1. Click "Pack extension" on the Chrome extensions page
+2. Select the extension folder to generate a `.crx` file
+3. Drag and drop the `.crx` file onto the Chrome extensions page to install
 
-## 使用方法
+## Usage
 
-1. 安装插件后，浏览器工具栏会出现插件图标
-2. 访问任意网页，字体会自动被强制设置为LXGWWenKaiGB-Regular
-3. 点击插件图标可以打开控制面板
-4. 在控制面板中可以开启或关闭字体强制功能
+1. After installing the extension, an icon will appear in the browser toolbar
+2. Visit any web page, and the font will be automatically forced to LXGWWenKaiGB-Regular
+3. Click the extension icon to open the control panel
+4. You can enable or disable the font forcing function in the control panel
 
-## 文件结构
+## File Structure
 
 ```
-├── manifest.json          # 插件配置文件
-├── content.css            # 字体样式文件
-├── content.js             # 内容脚本
-├── popup.html             # 弹出窗口界面
-├── popup.js               # 弹出窗口逻辑
-├── LXGWWenKaiGB-Regular.woff2  # 字体文件
-└── README.md              # 说明文档
+├── _locales                  # Localization files
+│   ├── en                    # English localization
+│   │   └── messages.json     # English messages
+│   ├── zh_CN                 # Simplified Chinese localization
+│   │   └── messages.json     # Simplified Chinese messages
+│   ├── zh_TW                 # Traditional Chinese localization
+│   │   └── messages.json     # Traditional Chinese messages
+│   ├── ja                    # Japanese localization
+│   │   └── messages.json     # Japanese messages
+│   ├── ko                    # Korean localization
+│   │   └── messages.json     # Korean messages
+│   ├── ms                    # Malay localization
+│   │   └── messages.json     # Malay messages
+├── manifest.json             # Plugin configuration file
+├── content.css               # Font style file
+├── content.js                # Content script
+├── popup.html                # Popup window interface
+├── popup.js                  # Popup window logic
+├── LXGWWenKaiGB-Regular.woff2 # Font file
+├── OFL.txt                   # Derived font license
+├── OFL_origin.txt            # Original font license
+└── README.md                 # Documentation
 ```
 
-## 技术实现
+## Technical Implementation
 
-- 使用Manifest V3规范
-- 通过content scripts注入CSS和JavaScript
-- 使用MutationObserver监听DOM变化
-- 支持动态开启/关闭功能
-- 使用Chrome Storage API保存设置
+- Uses Manifest V3 specification
+- Injects CSS and JavaScript through content scripts
+- Uses MutationObserver to monitor DOM changes
+- Supports dynamic enable/disable functionality
+- Uses Chrome Storage API to save settings
 
-## 注意事项
+## Notes
 
-- 插件会强制覆盖所有网页的字体设置
-- 某些特殊网站可能需要刷新页面才能完全生效
-- 如果遇到字体显示问题，可以通过插件图标关闭功能
+- The plugin will forcibly override the font settings of all web pages.
+- Some special websites may require a page refresh to take full effect.
+- If you encounter font display issues, you can disable the function via the plugin icon.
 
-## 兼容性
+## Compatibility
 
-- 支持Chrome 88+版本
-- 支持基于Chromium的浏览器（如Edge、Opera等）
+- Supports Chrome version 88+.
+- Supports Chromium-based browsers (e.g., Edge, Opera, etc.).
 
-## 许可证
+## License
 
-本项目仅供学习和个人使用。
+This project is for learning and personal use only.
