@@ -2,99 +2,352 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        :root {
+            /* 浅色模式变量 */
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --text-accent: #3b82f6;
+            --border-color: #e2e8f0;
+            --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-heavy: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --btn-primary: #3b82f6;
+            --btn-primary-hover: #2563eb;
+            --btn-danger: #ef4444;
+            --btn-danger-hover: #dc2626;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+        }
+
+        /* 深色模式变量 */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #0f172a;
+                --bg-secondary: #1e293b;
+                --bg-card: #334155;
+                --text-primary: #f1f5f9;
+                --text-secondary: #94a3b8;
+                --text-accent: #60a5fa;
+                --border-color: #475569;
+                --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.3);
+                --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.3);
+                --shadow-heavy: 0 10px 15px rgba(0, 0, 0, 0.3);
+                --btn-primary: #3b82f6;
+                --btn-primary-hover: #60a5fa;
+                --btn-danger: #ef4444;
+                --btn-danger-hover: #f87171;
+                --success-color: #34d399;
+                --warning-color: #fbbf24;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            width: 300px;
-            padding: 20px;
-            font-family: 'Microsoft YaHei', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 360px;
+            min-height: 400px;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--btn-primary), var(--text-accent));
+            padding: 24px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            font-size: 32px;
+            margin-bottom: 8px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
             color: white;
             margin: 0;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
-        
-        .container {
-            text-align: center;
+
+        .subtitle {
+            font-size: 13px;
+            color: rgba(255,255,255,0.8);
+            margin: 4px 0 0 0;
+            font-weight: 400;
         }
-        
-        h1 {
+
+        .content {
+            padding: 24px 20px;
+        }
+
+        .status-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+
+        .status-card:hover {
+            box-shadow: var(--shadow-medium);
+            transform: translateY(-1px);
+        }
+
+        .font-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .font-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--success-color), var(--warning-color));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 18px;
-            margin: 0 0 15px 0;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-        }
-        
-        .status {
-            background: rgba(255,255,255,0.2);
-            padding: 15px;
-            border-radius: 8px;
-            margin: 15px 0;
-            backdrop-filter: blur(10px);
-        }
-        
-        .font-name {
-            font-weight: bold;
-            color: #FFE066;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-        }
-        
-        .description {
-            font-size: 14px;
-            line-height: 1.5;
-            margin: 10px 0;
-            opacity: 0.9;
-        }
-        
-        .toggle-btn {
-            background: #4CAF50;
             color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .font-details h3 {
+            margin: 0 0 4px 0;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .font-name {
+            font-size: 13px;
+            color: var(--text-accent);
+            font-weight: 500;
+            font-family: 'Courier New', monospace;
+            background: var(--bg-secondary);
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .toggle-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .toggle-info {
+            flex: 1;
+        }
+
+        .toggle-label {
             font-size: 14px;
-            margin: 10px 0;
-            transition: background 0.3s;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin: 0 0 4px 0;
+        }
+
+        .toggle-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 48px;
+            height: 28px;
+            background: var(--border-color);
+            border-radius: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            outline: none;
+        }
+
+        .toggle-switch.active {
+            background: var(--btn-primary);
+        }
+
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 12px;
+            transition: all 0.3s ease;
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
-        
-        .toggle-btn:hover {
-            background: #45a049;
-            transform: translateY(-1px);
-            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+
+        .toggle-switch.active::after {
+            transform: translateX(20px);
         }
-        
-        .toggle-btn.disabled {
-            background: #f44336;
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            margin-top: 16px;
         }
-        
-        .toggle-btn.disabled:hover {
-            background: #da190b;
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--success-color);
+            animation: pulse 2s infinite;
         }
-        
+
+        .status-dot.inactive {
+            background: var(--text-secondary);
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .status-text {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
         .footer {
-            font-size: 12px;
-            margin-top: 15px;
-            opacity: 0.7;
+            padding: 16px 20px;
+            border-top: 1px solid var(--border-color);
+            background: var(--bg-secondary);
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .version {
+            color: var(--text-accent);
+            font-weight: 500;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 380px) {
+            body {
+                width: 320px;
+            }
+            
+            .content {
+                padding: 20px 16px;
+            }
+            
+            .header {
+                padding: 20px 16px;
+            }
+        }
+
+        /* 无障碍支持 */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* 高对比度模式支持 */
+        @media (prefers-contrast: high) {
+            :root {
+                --border-color: #000000;
+                --shadow-light: 0 0 0 1px #000000;
+                --shadow-medium: 0 0 0 2px #000000;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎨 强制字体设置</h1>
-        
-        <div class="status">
-            <div class="description">
-                当前强制使用字体：<br>
-                <span class="font-name">LXGWWenKaiGB-Regular</span>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">🎨</div>
+            <h1 class="title">字体强制器</h1>
+            <p class="subtitle">Font Force Extension</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="status-card">
+            <div class="font-info">
+                <div class="font-icon">Aa</div>
+                <div class="font-details">
+                    <h3>当前字体</h3>
+                    <div class="font-name">LXGWWenKaiGB-Regular</div>
+                </div>
             </div>
             
-            <button id="toggleBtn" class="toggle-btn">
-                <span id="btnText">禁用字体强制</span>
-            </button>
+            <div class="toggle-section">
+                <div class="toggle-info">
+                    <div class="toggle-label">强制字体</div>
+                    <div class="toggle-desc">在所有网页上应用指定字体</div>
+                </div>
+                <button id="toggleBtn" class="toggle-switch active">
+                </button>
+            </div>
+
+            <div class="status-indicator">
+                <div id="statusDot" class="status-dot"></div>
+                <div id="statusText" class="status-text">字体强制已启用</div>
+            </div>
         </div>
-        
-        <div class="footer">
-            插件已激活，正在强制所有网页使用指定字体
-        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footer-text">
+            版本 <span class="version">1.0.0</span> • 支持自动深色模式<br>
+            适配所有基于 Chromium 的浏览器
+        </p>
     </div>
     
     <script src="popup.js"></script>

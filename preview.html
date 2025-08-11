@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>插件界面预览</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #f0f2f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .preview-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        .theme-label {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .popup-frame {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            background: white;
+        }
+        
+        .dark-preview {
+            filter: invert(1) hue-rotate(180deg);
+        }
+        
+        .dark-preview img {
+            filter: invert(1) hue-rotate(180deg);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+        
+        .description {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .feature h3 {
+            margin: 0 0 8px 0;
+            color: #1e293b;
+            font-size: 16px;
+        }
+        
+        .feature p {
+            margin: 0;
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>🎨 字体强制器 - 全新界面设计</h1>
+        
+        <div class="preview-container">
+            <div>
+                <div class="theme-label">浅色模式</div>
+                <div class="popup-frame">
+                    <iframe src="popup.html" width="360" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+            
+            <div>
+                <div class="theme-label">深色模式效果</div>
+                <div class="popup-frame dark-preview">
+                    <iframe src="popup.html" width="360" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="description">
+            <h2>✨ 全新设计特性</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>🌙 自动深色模式</h3>
+                    <p>根据系统设置自动切换深色/浅色主题，提供最佳视觉体验</p>
+                </div>
+                <div class="feature">
+                    <h3>🎨 现代化设计</h3>
+                    <p>采用最新的设计语言，简洁美观的卡片式布局</p>
+                </div>
+                <div class="feature">
+                    <h3>🔄 流畅动画</h3>
+                    <p>丰富的交互动画和过渡效果，提升用户体验</p>
+                </div>
+                <div class="feature">
+                    <h3>♿ 无障碍支持</h3>
+                    <p>完整的键盘导航和屏幕阅读器支持</p>
+                </div>
+                <div class="feature">
+                    <h3>📱 响应式设计</h3>
+                    <p>适配不同屏幕尺寸，支持高对比度模式</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ 性能优化</h3>
+                    <p>减少动画对性能敏感用户的影响</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
