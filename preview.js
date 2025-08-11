@@ -1,8 +1,8 @@
-// 预览模式下模拟chrome.storage
+// Simulate chrome.storage in preview mode
 if (!window.chrome || !chrome.storage) {
     console.log('Running in preview mode, simulating chrome.storage');
     
-    // 模拟chrome.storage.sync
+    // Simulate chrome.storage.sync
     window.chrome = window.chrome || {};
     chrome.storage = chrome.storage || {};
     chrome.storage.sync = {
@@ -30,7 +30,7 @@ if (!window.chrome || !chrome.storage) {
         }
     };
     
-    // 模拟chrome.i18n
+    // Simulate chrome.i18n
     chrome.i18n = {
         getUILanguage: function() {
             return 'en';
@@ -46,7 +46,7 @@ if (!window.chrome || !chrome.storage) {
         }
     };
     
-    // 模拟chrome.tabs
+    // Simulate chrome.tabs
     chrome.tabs = {
         query: function(queryInfo, callback) {
             setTimeout(() => callback([{id: 1}]), 0);
@@ -60,17 +60,17 @@ if (!window.chrome || !chrome.storage) {
     };
 }
 
-// 加载完成后初始化
-window.addEventListener('load', function() {
-    // 如果是预览模式，设置默认语言
+// Load after the DOM is ready
+window.addEventListener('DOMContentLoaded', function() {
+    // If in preview mode, set default language
     if (!window.chrome || !chrome.storage) {
         console.log('Setting default language for preview');
-        // 先设置默认语言为en，确保翻译文件能被找到
+        // First set default language to en, ensure translation files can be found
         chrome.storage.sync.set({'selectedLanguage': 'en'});
-        // 延迟后切换到zh_CN，以便演示语言切换效果
+        // Delay after switching to zh_CN, so that the language switch effect can be demonstrated
         setTimeout(() => {
             chrome.storage.sync.set({'selectedLanguage': 'zh_CN'});
-            // 手动调用初始化函数
+            // Manually call the initialization function
             if (window.initializeI18n) {
                 initializeI18n();
             }

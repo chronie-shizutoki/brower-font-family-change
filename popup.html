@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* 加载字体 */
+        /* Load fonts */
         @font-face {
             font-family: 'LXGWWenKaiGB-Regular';
             src: url('LXGWWenKaiGB-Regular.woff2') format('woff2');
@@ -30,7 +30,7 @@
         }
 
         :root {
-            /* 浅色模式变量 */
+            /* Light mode variables */
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
             --bg-card: #ffffff;
@@ -49,7 +49,7 @@
             --warning-color: #f59e0b;
         }
 
-        /* 深色模式变量 */
+        /* Dark mode variables */
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg-primary: #0f172a;
@@ -348,7 +348,7 @@
             font-weight: 500;
         }
 
-        /* 响应式设计 */
+        /* Responsive design */ 
         @media (max-width: 380px) {
             body {
                 width: 320px;
@@ -363,7 +363,7 @@
             }
         }
 
-        /* 无障碍支持 */
+        /* Accessibility support */
         @media (prefers-reduced-motion: reduce) {
             * {
                 animation-duration: 0.01ms !important;
@@ -372,7 +372,7 @@
             }
         }
 
-        /* 高对比度模式支持 */
+        /* High contrast mode support */
         @media (prefers-contrast: high) {
             :root {
                 --border-color: #000000;
@@ -386,7 +386,7 @@
     <div class="header">
         <div class="header-content">
             <div class="logo">🎨</div>
-            <h1 class="title" data-i18n="headerTitle">字体强制器</h1>
+            <h1 class="title" data-i18n="headerTitle">Font Forcer</h1>
             <p class="subtitle" data-i18n="headerSubtitle">Font Force Extension</p>
         </div>
     </div>
@@ -396,15 +396,15 @@
             <div class="font-info">
                 <div class="font-icon">Aa</div>
                 <div class="font-details">
-                    <h3 data-i18n="currentFont">当前字体</h3>
+                    <h3 data-i18n="currentFont">Current Font</h3>
                     <div class="font-name" data-i18n="fontName">LXGWWenKaiGB-Regular</div>
                 </div>
             </div>
             
             <div class="toggle-section">
                 <div class="toggle-info">
-                    <div class="toggle-label" data-i18n="forceFont">强制字体</div>
-                    <div class="toggle-desc" data-i18n="forceFontDesc">在所有网页上应用指定字体</div>
+                    <div class="toggle-label" data-i18n="forceFont">Force Font</div>
+                    <div class="toggle-desc" data-i18n="forceFontDesc">Apply specified font to all websites</div>
                 </div>
                 <button id="toggleBtn" class="toggle-switch active">
                 </button>
@@ -412,15 +412,15 @@
 
             <div class="status-indicator">
                 <div id="statusDot" class="status-dot"></div>
-                <div id="statusText" class="status-text" data-i18n="statusEnabled">字体强制已启用</div>
+                <div id="statusText" class="status-text" data-i18n="statusEnabled">Force Font Enabled</div>
             </div>
         </div>
 
         <div class="language-card">
             <div class="language-section">
                 <div class="language-info">
-                    <div class="language-label" data-i18n="languageSettings">语言设置</div>
-                    <div class="language-desc" data-i18n="selectLanguage">选择语言</div>
+                    <div class="language-label" data-i18n="languageSettings">Language Settings</div>
+                    <div class="language-desc" data-i18n="selectLanguage">Select language</div>
                 </div>
                 <select id="languageSelect" class="language-select">
                     <option value="zh_CN">简体中文</option>
@@ -436,8 +436,8 @@
 
     <div class="footer">
         <p class="footer-text">
-            <span data-i18n="version">版本</span> <span class="version">1.0.1</span> • <span data-i18n="darkModeSupport">支持自动深色模式</span><br>
-            <span data-i18n="browserCompatibility">适配所有基于 Chromium 的浏览器</span>
+            <span data-i18n="version">Version</span> <span class="version">1.0.1</span> • <span data-i18n="darkModeSupport">Supports dark mode</span><br>
+            <span data-i18n="browserCompatibility">Compatible with all Chromium-based browsers</span>
         </p>
     </div>
     

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>字体替换测试页面</title>
+    <title>Font Replacement Test Page</title>
     <style>
         body {
             font-size: 18px;
@@ -39,10 +39,10 @@
     </style>
 </head>
 <body>
-    <h1>字体替换测试页面</h1>
+    <h1>Font Replacement Test Page</h1>
 
     <div class="language-selector">
-        <h3>选择语言:</h3>
+        <h3>Select Language:</h3>
         <button id="zh_CN">简体中文</button>
         <button id="zh_TW">繁体中文</button>
         <button id="en">英语</button>
@@ -89,17 +89,17 @@
 
     <script src="content.js"></script>
     <script>
-        // 模拟popup发送语言切换消息
+        // Simulate popup sending language switch message
         document.querySelectorAll('button').forEach(button => {
             button.addEventListener('click', function() {
                 const language = this.id;
-                console.log(`切换语言到: ${language}`);
+                console.log(`Switch language to: ${language}`);
                 
-                // 模拟chrome.runtime.sendMessage
+                // Simulate chrome.runtime.sendMessage
                 if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.sendMessage) {
                     chrome.runtime.sendMessage({action: 'changeLanguage', language: language});
                 } else {
-                    // 直接调用content.js中的逻辑（用于测试）
+                    // Directly call the logic in content.js (for testing)
                     if (window.__forceFontScript) {
                         window.__forceFontScript.changeLanguage(language);
                     }

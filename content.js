@@ -1,24 +1,24 @@
-// 强制字体设置脚本
+// Font forcing script
 (function() {
     'use strict';
     
     let isEnabled = true;
     let observer = null;
     let checkInterval = null;
-    let currentLanguage = 'zh_CN'; // 默认语言为简体中文
+    let currentLanguage = 'zh_CN'; // Default language is Simplified Chinese
     let fontsLoaded = false;
     
-    // 字体映射表
+    // Font mapping table
     const fontMap = {
-        'zh_CN': 'LXGWWenKaiGB-Regular', // 简体中文
-        'zh_TW': 'LXGWWenKaiTC-Regular', // 繁体中文
-        'ko': 'LXGWWenKaiGB-Regular',    // 韩语
-        'ja': 'KleeOne-Regular',         // 日语
-        'en': 'KleeOne-Regular',         // 英语
-        'ms': 'KleeOne-Regular'          // 马来语
+        'zh_CN': 'LXGWWenKaiGB-Regular', // Simplified Chinese
+        'zh_TW': 'LXGWWenKaiTC-Regular', // Traditional Chinese
+        'ko': 'LXGWWenKaiGB-Regular',    // Korean
+        'ja': 'KleeOne-Regular',         // Japanese
+        'en': 'KleeOne-Regular',         // English
+        'ms': 'KleeOne-Regular'          // Malay
     };
     
-    // 字体列表
+    // Font list
     const fonts = [
         {
             family: 'LXGWWenKaiGB-Regular',
@@ -34,16 +34,16 @@
         }
     ];
     
-    // 加载字体
+    // Load fonts
     function loadFonts() {
         if (fontsLoaded) return Promise.resolve(true);
         
-        // 确定字体文件的基础URL
+        // Determine base URL for font files
         let baseUrl = '';
         if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.getURL) {
             baseUrl = chrome.runtime.getURL('');
         } else {
-            // 回退到相对路径
+            // Fallback to relative path
             baseUrl = './';
         }
         
@@ -56,26 +56,26 @@
                         resolve(true);
                     })
                     .catch(error => {
-                        console.error(`字体 ${font.family} 加载失败:`, error);
-                        resolve(false); // 即使失败也继续尝试其他字体
+                        console.error(`Failed to load font ${font.family}:`, error);
+                        resolve(false); // Continue trying other fonts even if this one fails
                     });
             });
         });
         
         return Promise.all(fontPromises).then(results => {
-            fontsLoaded = results.some(result => result); // 如果至少有一个字体加载成功
+            fontsLoaded = results.some(result => result); // If at least one font loads successfully
             return fontsLoaded;
         });
     }
     
-    // 检查插件是否启用和语言设置
+    // Check if extension is enabled and language settings
     function checkEnabled() {
-        // 首先加载字体
+        // First load fonts
         loadFonts().then(() => {
             if (typeof chrome !== 'undefined' && chrome.storage) {
                 chrome.storage.sync.get(['fontForceEnabled', 'selectedLanguage'], function(result) {
-                    isEnabled = result.fontForceEnabled !== false; // 默认启用
-                    currentLanguage = result.selectedLanguage || 'zh_CN'; // 如果没有保存的语言设置，使用默认值
+                    isEnabled = result.fontForceEnabled !== false; // Default to enabled
+                    currentLanguage = result.selectedLanguage || 'zh_CN'; // If no language setting, use default
                     if (isEnabled) {
                         applyFontForce();
                         startObserving();
@@ -85,30 +85,30 @@
                     }
                 });
             } else {
-                // 如果chrome API不可用，默认启用
+                // If chrome API is not available, enable by default
                 applyFontForce();
                 startObserving();
             }
         });
     }
     
-    // 应用字体强制
+    // Apply font forcing
     function applyFontForce() {
         if (!isEnabled) return;
         
-        // 确保字体已加载
+        // Ensure fonts are loaded
         loadFonts().then(() => {
-            // 获取当前语言对应的字体，如果不存在则使用默认字体
+            // Get font corresponding to current language, use default if not exists
             const font = fontMap[currentLanguage] || fontMap['zh_CN'];
             
-            // 创建样式元素
+            // Create style element
             let style = document.getElementById('force-font-style');
             if (!style) {
                 style = document.createElement('style');
                 style.id = 'force-font-style';
             }
             
-            // 根据当前语言添加对应的字体类
+            // Add corresponding font class based on current language
             style.textContent = `
                 * { 
                     font-family: unset !important;
@@ -127,11 +127,11 @@
                 }
             `;
             
-            // 添加到head
+            // Add to head
             if (document.head) {
                 document.head.appendChild(style);
             } else {
-                // 如果head还没有加载，等待
+                // If head is not loaded yet, wait
                 document.addEventListener('DOMContentLoaded', function() {
                     if (document.head && isEnabled) {
                         document.head.appendChild(style);
@@ -139,19 +139,19 @@
                 });
             }
 
-            // 为html元素添加对应的语言字体类
+            // Add corresponding language font class to html element
             if (document.documentElement) {
-                // 移除所有语言字体类
+                // Remove all language font classes
                 Object.keys(fontMap).forEach(lang => {
                     document.documentElement.classList.remove(`font-${lang}`);
                 });
-                // 添加当前语言的字体类
+                // Add current language font class
                 document.documentElement.classList.add(`font-${currentLanguage}`);
             }
         });
     }
     
-    // 移除字体强制
+    // Remove font forcing
     function removeFontForce() {
         const style = document.getElementById('force-font-style');
         if (style) {
@@ -159,7 +159,7 @@
         }
     }
     
-    // 开始监听动态变化
+    // Start observing dynamic changes
     function startObserving() {
         if (!isEnabled || observer) return;
         
@@ -170,9 +170,9 @@
                 if (mutation.type === 'childList') {
                     mutation.addedNodes.forEach(function(node) {
                         if (node.nodeType === Node.ELEMENT_NODE) {
-                            // 对新添加的元素应用语言字体类
+                            // Apply language font class to newly added elements
                             node.classList.add(`font-${currentLanguage}`);
-                            // 对其子元素也应用语言字体类
+                            // Also apply language font class to their children
                             const children = node.querySelectorAll('*');
                             children.forEach(function(child) {
                                 child.classList.add(`font-${currentLanguage}`);
@@ -199,11 +199,11 @@
             });
         }
         
-        // 定期检查并重新应用字体（防止被其他脚本覆盖）
+        // Regularly check and reapply fonts (to prevent being overwritten by other scripts)
         if (!checkInterval) {
             checkInterval = setInterval(function() {
                 if (isEnabled) {
-                    // 确保html元素始终有当前语言的字体类
+                    // Ensure html element always has current language font class
                     if (document.documentElement) {
                         Object.keys(fontMap).forEach(lang => {
                             document.documentElement.classList.remove(`font-${lang}`);
@@ -215,7 +215,7 @@
         }
     }
     
-    // 停止监听
+    // Stop observing
     function stopObserving() {
         if (observer) {
             observer.disconnect();
@@ -227,7 +227,7 @@
         }
     }
     
-    // 监听来自popup的消息
+    // Listen for messages from popup
     if (typeof chrome !== 'undefined' && chrome.runtime) {
         chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
             if (request.action === 'toggleFontForce') {
@@ -250,7 +250,7 @@
         });
     }
     
-    // 暴露全局方法用于测试
+    // Expose global methods for testing
     window.__forceFontScript = {
         changeLanguage: function(language) {
             currentLanguage = language;
@@ -270,6 +270,6 @@
         }
     }
 
-    // 初始化
+    // Initialize
     checkEnabled();
 })();

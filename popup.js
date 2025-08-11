@@ -1,8 +1,8 @@
-// 全局变量
+// Global variables
 let toggleBtn, statusDot, statusText, languageSelect;
 
 function updateUI(isEnabled) { 
-    // 更新切换开关状态 
+    // Update toggle switch status
     if (isEnabled) { 
         toggleBtn.classList.add('active'); 
         toggleBtn.setAttribute('aria-checked', 'true'); 
@@ -11,7 +11,7 @@ function updateUI(isEnabled) {
         toggleBtn.setAttribute('aria-checked', 'false'); 
     } 
     
-    // 更新状态指示器 
+    // Update status indicator
     if (statusDot) { 
         if (isEnabled) { 
             statusDot.classList.remove('inactive'); 
@@ -20,16 +20,16 @@ function updateUI(isEnabled) {
         } 
     } 
     
-    // 添加无障碍属性 
+    // Add accessibility attributes 
     toggleBtn.setAttribute('role', 'switch'); 
     toggleBtn.setAttribute('tabindex', '0'); 
-    toggleBtn.setAttribute('aria-label', isEnabled ? (chrome.i18n.getMessage('disableFontForce') || '禁用字体强制') : (chrome.i18n.getMessage('enableFontForce') || '启用字体强制')); 
+    toggleBtn.setAttribute('aria-label', isEnabled ? (chrome.i18n.getMessage('disableFontForce') || 'Disable font force') : (chrome.i18n.getMessage('enableFontForce') || 'Enable font force')); 
     
-    // 更新状态文本 
+    // Update status text 
     updateStatusText(); 
 } 
 
-// 添加平滑的动画效果 
+// Add smooth animation effect 
 function addRippleEffect(element, event) { 
     const ripple = document.createElement('span'); 
     const rect = element.getBoundingClientRect(); 
@@ -50,7 +50,7 @@ function addRippleEffect(element, event) {
         pointer-events: none; 
     `; 
     
-    // 添加ripple动画样式 
+    // Add ripple animation style 
     if (!document.getElementById('ripple-style')) { 
         const style = document.createElement('style'); 
         style.id = 'ripple-style'; 
@@ -80,19 +80,19 @@ document.addEventListener('DOMContentLoaded', function() {
     statusText = document.getElementById('statusText'); 
     languageSelect = document.getElementById('languageSelect'); 
     
-    // 初始化国际化 
+    // Initialize internationalization
     initializeI18n(); 
     
-    // 加载当前状态 
+    // Load current state 
     loadCurrentState(); 
     
-    // 绑定切换按钮事件 
+    // Bind toggle button event 
     toggleBtn.addEventListener('click', toggleFontForce); 
     
-    // 绑定语言选择器事件 
+    // Bind language selector event 
     languageSelect.addEventListener('change', changeLanguage); 
     
-    // 添加键盘支持 
+    // Add keyboard support 
     toggleBtn.addEventListener('keydown', function(e) { 
         if (e.key === 'Enter' || e.key === ' ') { 
             e.preventDefault(); 
@@ -100,92 +100,97 @@ document.addEventListener('DOMContentLoaded', function() {
         } 
     }); 
     
-    // 检测系统主题变化 
+    // Detect system theme change 
     if (window.matchMedia) { 
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)'); 
         mediaQuery.addListener(function(e) { 
-            // 主题变化时可以添加额外的处理逻辑 
+            // Additional processing logic can be added when the theme changes
             console.log('Theme changed to:', e.matches ? 'dark' : 'light'); 
         }); 
     } 
     
-    // 页面加载动画 
+    // Add page load animation 
     setTimeout(() => { 
         document.body.style.opacity = '1'; 
     }, 100); 
  });
 
-// 国际化相关函数
-// 翻译缓存
+// Internationalization related functions
+// Translation cache
 let translations = {};
 
-// 加载翻译文件
+// Load translation file
 function loadTranslations(language, callback) {
-    // 如果已经加载过该语言的翻译，则直接调用回调
+    // If the translation for the language has already been loaded, call the callback directly
     if (translations[language]) {
         callback();
         return;
     }
     
-    // 加载翻译文件
-    fetch(`_locales/${language}/messages.json`)        .then(response => {
+    // Load the translation file
+    fetch(`_locales/${language}/messages.json`)
+        .then(response => {
             if (!response.ok) {
-                throw new Error(`无法加载翻译文件: ${language}`);
+                throw new Error(`Failed to load translation file: ${language}`);
             }
             return response.json();
-        })        .then(data => {
+        })
+        .then(data => {
             translations[language] = data;
             callback();
-        })        .catch(error => {
+        })
+        .catch(error => {
             console.error(error);
-            // 如果加载失败，使用默认语言
+            // If loading fails, use the default language
             if (language !== 'en') {
                 loadTranslations('en', callback);
             } else {
-                callback();
+                // If loading fails and the default language is also not available, use the original message key
+                callback(messageKey);
             }
         });
 }
 
-// 获取翻译文本
+// Get translation text
 function getMessage(messageKey, language) {
     if (!translations[language] || !translations[language][messageKey]) {
-        // 如果找不到翻译，尝试使用英语
+        // If the translation is not found, try using the default language
         if (language !== 'en' && translations['en'] && translations['en'][messageKey]) {
             return translations['en'][messageKey].message;
         }
+        // If the translation is not found in the default language, return the original message key
         return messageKey;
     }
     return translations[language][messageKey].message;
 }
 
 function initializeI18n() {
-    // 加载保存的语言设置
+    // Load the saved language setting
     chrome.storage.sync.get(['selectedLanguage'], function(result) {
         const savedLanguage = result.selectedLanguage || chrome.i18n.getUILanguage().replace('-', '_');
         const languageSelect = document.getElementById('languageSelect');
         
-        // 设置语言选择器的值
+        // Set the value of the language selector
         if (languageSelect) {
             languageSelect.value = savedLanguage;
         }
         
-        // 立即更新字体（不需要等待翻译加载完成）
+        // Immediately update the font (no need to wait for translation loading)
         updateFontFamily(savedLanguage);
         
-        // 加载翻译
+        // Load translations
         loadTranslations(savedLanguage, function() {
-            // 应用翻译
+            // Apply translations
             applyTranslations(savedLanguage);
         });
     });
 }
 
-// 根据语言更新字体
+// Update font family based on language
 function updateFontFamily(language) {
     const body = document.body;
     
-    // 字体映射关系
+    // Font mapping relationship
     const fontMap = {
         'zh_CN': 'LXGWWenKaiGB-Regular',
         'zh_TW': 'LXGWWenKaiTC-Regular',
@@ -195,15 +200,15 @@ function updateFontFamily(language) {
         'ms': 'KleeOne-Regular'
     };
     
-    // 获取当前语言对应的字体
+    // Get the font corresponding to the current language
     const font = fontMap[language] || 'KleeOne-Regular';
     
-    // 设置body的字体
+    // Set the font of the body
     body.style.fontFamily = `${font}, sans-serif`;
 }
 
 function applyTranslations(language) {
-    // 获取所有带有 data-i18n 属性的元素
+    // Get all elements with the data-i18n attribute
     const elements = document.querySelectorAll('[data-i18n]');
     
     elements.forEach(element => {
@@ -215,10 +220,10 @@ function applyTranslations(language) {
         }
     });
     
-    // 更新状态文本
+    // Update status text
     updateStatusText(language);
     
-    // 更新字体
+    // Update font
     updateFontFamily(language);
 }
 
@@ -226,21 +231,21 @@ function changeLanguage() {
     const languageSelect = document.getElementById('languageSelect');
     const selectedLanguage = languageSelect.value;
     
-    // 保存语言设置
+    // Save language settings
     chrome.storage.sync.set({selectedLanguage: selectedLanguage}, function() {
-        // 加载新语言的翻译并应用
+        // Load translations for the new language and apply
         loadTranslations(selectedLanguage, function() {
             applyTranslations(selectedLanguage);
         });
         
-        // 通知内容脚本语言变化
+        // Notify the content script of the language change
         chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
             if (tabs[0]) {
                 chrome.tabs.sendMessage(tabs[0].id, {
                     action: 'changeLanguage',
                     language: selectedLanguage
                 }).catch(() => {
-                    // 忽略错误，可能是页面还没有加载内容脚本
+                    // Ignore errors, may be the content script has not been loaded yet
                 });
             }
         });
@@ -262,22 +267,22 @@ function updateStatusText(language) {
     }
 }
 
-// 加载当前状态函数
+// Load current state function
 function loadCurrentState() {
     chrome.storage.sync.get(['fontForceEnabled'], function(result) {
-        const isEnabled = result.fontForceEnabled !== false; // 默认启用
+        const isEnabled = result.fontForceEnabled !== false; // Default is enabled
         updateUI(isEnabled);
     });
 }
 
-// 切换字体强制功能
+// Toggle font force function
 function toggleFontForce() {
     const toggleBtn = document.getElementById('toggleBtn');
     
-    // 添加点击波纹效果
+    // Add click ripple effect
     addRippleEffect(toggleBtn, event);
     
-    // 添加触觉反馈（如果支持）
+    // Add haptic feedback (if supported)
     if (navigator.vibrate) {
         navigator.vibrate(50);
     }
@@ -286,18 +291,18 @@ function toggleFontForce() {
         const currentState = result.fontForceEnabled !== false;
         const newState = !currentState;
         
-        // 保存新状态
+        // Save new state
         chrome.storage.sync.set({fontForceEnabled: newState}, function() {
             updateUI(newState);
             
-            // 通知内容脚本状态变化
+            // Notify the content script of the state change
             chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
                 if (tabs[0]) {
                     chrome.tabs.sendMessage(tabs[0].id, {
                         action: 'toggleFontForce',
                         enabled: newState
                     }).catch(() => {
-                        // 忽略错误，可能是页面还没有加载内容脚本
+                        // Ignore errors, may be the content script has not been loaded yet
                     });
                 }
             });

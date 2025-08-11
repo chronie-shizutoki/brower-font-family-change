@@ -1,4 +1,4 @@
-/* 定义所有字体 */
+/* Define all fonts */
 @font-face {
   font-family: 'LXGWWenKaiGB-Regular';
   src: url(chrome-extension://__MSG_@@extension_id__/LXGWWenKaiGB-Regular.woff2) format('woff2');
@@ -23,7 +23,7 @@
   font-display: swap;
 }
 
-/* 语言字体类 */
+/* Language font classes */
 .font-zh_CN, .font-ko {
   font-family: 'LXGWWenKaiGB-Regular', sans-serif !important;
 }

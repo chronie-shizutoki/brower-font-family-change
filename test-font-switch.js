@@ -1,14 +1,14 @@
-// 测试字体切换功能
-console.log('开始测试字体切换功能...');
+// Test font switching functionality
+console.log('Start testing font switch functionality...');
 
-// 字体列表和路径
+// Font list and paths
 const fonts = [
     { family: 'LXGWWenKaiGB-Regular', url: 'LXGWWenKaiGB-Regular.woff2' },
     { family: 'LXGWWenKaiTC-Regular', url: 'LXGWWenKaiTC-Regular.woff2' },
     { family: 'KleeOne-Regular', url: 'KleeOne-Regular.woff2' }
 ];
 
-// 模拟字体映射
+// Mock font mapping
 const fontMap = {
     'zh_CN': 'LXGWWenKaiGB-Regular',
     'zh_TW': 'LXGWWenKaiTC-Regular',
@@ -18,7 +18,7 @@ const fontMap = {
     'ms': 'KleeOne-Regular'
 };
 
-// 加载字体函数
+// Load font function
 function loadFonts() {
     const fontPromises = fonts.map(font => {
         return new Promise((resolve, reject) => {
@@ -26,11 +26,11 @@ function loadFonts() {
             fontFace.load()
                 .then(() => {
                     document.fonts.add(fontFace);
-                    console.log(`✓ 字体 ${font.family} 加载成功`);
+                    console.log(`✓ Font ${font.family} loaded successfully`);
                     resolve();
                 })
                 .catch(error => {
-                    console.error(`✗ 字体 ${font.family} 加载失败:`, error);
+                    console.error(`✗ Font ${font.family} loading failed:`, error);
                     reject(error);
                 });
         });
@@ -39,48 +39,48 @@ function loadFonts() {
     return Promise.allSettled(fontPromises);
 }
 
-// 测试函数
+// Test function
 function testFontSwitch() {
-    // 使用document.body而不是创建新元素
+    // Use document.body instead of creating a new element
     const body = document.body;
     
-    // 测试不同语言的字体切换
+    // Test font switching for different languages
     Object.keys(fontMap).forEach(language => {
-        // 应用语言
+        // Apply the language
         updateFontFamily(language);
         
-        // 检查字体是否正确应用
+        // Check if the font is applied correctly
         const computedFont = window.getComputedStyle(body).fontFamily;
         const expectedFont = fontMap[language];
         
-        // 由于字体可能有回退，我们检查期望的字体是否在计算的字体列表中
+        // Since font fallback is possible, we check if the expected font is in the computed font list
         if (computedFont.includes(expectedFont)) {
-            console.log(`✓ 语言 ${language} 字体测试通过: ${computedFont}`);
+            console.log(`✓ Font switch test passed for language ${language}: ${computedFont}`);
         } else {
-            console.error(`✗ 语言 ${language} 字体测试失败: 期望 ${expectedFont}, 实际 ${computedFont}`);
+            console.error(`✗ Font switch test failed for language ${language}: Expected ${expectedFont}, got ${computedFont}`);
         }
     });
 }
 
-// 模拟updateFontFamily函数
+// Mock updateFontFamily function
 function updateFontFamily(language) {
     const body = document.body;
     
-    // 获取当前语言对应的字体
+    // Get the font for the current language
     const font = fontMap[language] || 'KleeOne-Regular';
     
-    // 设置body的字体
+    // Set the body font
     body.style.fontFamily = `${font}, sans-serif`;
 }
 
-// 加载字体后运行测试
+// Load fonts and run tests after loading
 loadFonts().then(results => {
-    // 检查是否有字体加载失败
+    // Check if any fonts failed to load
     const failedFonts = results.filter(result => result.status === 'rejected');
     if (failedFonts.length > 0) {
-        console.warn(`有 ${failedFonts.length} 种字体加载失败，测试可能不准确`);
+        console.warn(`There are ${failedFonts.length} fonts that failed to load, tests may be inaccurate`);
     }
     
-    // 延迟运行测试，确保字体完全应用
+    // Delay running tests to ensure fonts are fully applied
     setTimeout(testFontSwitch, 500);
 });
