@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Standardizzatore di font",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Applica i font standard di sistema alle pagine web, sostituendo i font non standard con system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Standardizzatore di font",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Font standard",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardizza font",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Applica i font standard di sistema alle pagine web",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Standardizzazione dei font attivata",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Standardizzazione dei font disattivata",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versione",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Supporto automatico modalità scura",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Compatibile con tutti i browser basati su Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Attiva standardizzazione dei font",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Disattiva standardizzazione dei font",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Impostazioni lingua",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Seleziona lingua",
+    "description": "Select language label"
+  }
+}

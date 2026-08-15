@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Skriftstandardiserer",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Skriftstandardiserer",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standardskrift",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardiser skrift",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Håndhev systemets skriftstandarder på nettsider",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Skriftstandardisering er aktivert",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Skriftstandardisering er deaktivert",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versjon",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatisk støtte for mørk modus",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Kompatibel med alle Chromium-baserte nettlesere",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Aktiver skriftstandardisering",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Deaktiver skriftstandardisering",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Språkinnstillinger",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Velg språk",
+    "description": "Select language label"
+  }
+}

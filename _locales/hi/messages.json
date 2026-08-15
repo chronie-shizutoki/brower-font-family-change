@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "फ़ॉन्ट स्टैंडर्डाइज़र",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "फ़ॉन्ट स्टैंडर्डाइज़र",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "मानक फ़ॉन्ट",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "फ़ॉन्ट मानकीकृत करें",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "वेब पेजों पर सिस्टम फ़ॉन्ट मानक लागू करें",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "फ़ॉन्ट मानकीकरण सक्षम",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "फ़ॉन्ट मानकीकरण अक्षम",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "संस्करण",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "स्वचालित डार्क मोड समर्थन",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "सभी Chromium-आधारित ब्राउज़रों के साथ संगत",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "फ़ॉन्ट मानकीकरण सक्षम करें",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "फ़ॉन्ट मानकीकरण अक्षम करें",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "भाषा सेटिंग्स",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "भाषा चुनें",
+    "description": "Select language label"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Fonttien vakioija",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Pakottaa järjestelmän fonttistandardit verkkosivuille ja korvaa epästandardit fontit system-ui:lla",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Fonttien vakioija",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Vakiofontti",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Vakioi fontti",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Pakottaa järjestelmän fonttistandardit verkkosivuille",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Fonttien vakiointi käytössä",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Fonttien vakiointi pois käytöstä",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versio",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automaattinen tumman tilan tuki",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Yhteensopiva kaikkien Chromium-pohjaisten selainten kanssa",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Ota fonttien vakiointi käyttöön",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Poista fonttien vakiointi käytöstä",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Kieliasetukset",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Valitse kieli",
+    "description": "Select language label"
+  }
+}

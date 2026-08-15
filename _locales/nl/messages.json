@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Lettertype-standaardiseerder",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Systeemlettertypen afdwingen op webpagina's, niet-standaard lettertypen vervangen door system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Lettertype-standaardiseerder",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standaardlettertype",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Lettertype standaardiseren",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Systeemlettertypen afdwingen op webpagina's",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Lettertypestandaardisatie ingeschakeld",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Lettertypestandaardisatie uitgeschakeld",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versie",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatische donkere modus ondersteuning",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Compatibel met alle op Chromium gebaseerde browsers",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Lettertypestandaardisatie inschakelen",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Lettertypestandaardisatie uitschakelen",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Taalinstellingen",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Taal selecteren",
+    "description": "Select language label"
+  }
+}

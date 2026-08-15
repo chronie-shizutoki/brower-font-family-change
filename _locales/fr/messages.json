@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Standardisateur de polices",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Appliquer les polices système standard sur les pages web, en remplaçant les polices non standard par system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Standardisateur de polices",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Police standard",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardiser la police",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Appliquer les polices système standard sur les pages web",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Standardisation des polices activée",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Standardisation des polices désactivée",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Version",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Prise en charge automatique du mode sombre",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Compatible avec tous les navigateurs basés sur Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Activer la standardisation des polices",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Désactiver la standardisation des polices",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Paramètres de langue",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Sélectionner la langue",
+    "description": "Select language label"
+  }
+}

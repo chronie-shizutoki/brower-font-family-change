@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Standardizator de fonturi",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Impune standardele de fonturi de sistem pe paginile web, înlocuind fonturile non-standard cu system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Standardizator de fonturi",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Font standard",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardizare font",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Impune standardele de fonturi de sistem pe paginile web",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Standardizarea fonturilor activată",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Standardizarea fonturilor dezactivată",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versiune",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Suport automat pentru modul întunecat",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Compatibil cu toate browserele bazate pe Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Activare standardizare fonturi",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Dezactivare standardizare fonturi",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Setări de limbă",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Selectare limbă",
+    "description": "Select language label"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "استانداردساز فونت",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "استانداردساز فونت",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "فونت استاندارد",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "استانداردسازی فونت",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "اعمال استانداردهای فونت سیستم در صفحات وب",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "استانداردسازی فونت فعال شد",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "استانداردسازی فونت غیرفعال شد",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "نسخه",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "پشتیبانی خودکار از حالت تاریک",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "سازگار با تمام مرورگرهای مبتنی بر Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "فعال‌سازی استانداردسازی فونت",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "غیرفعال‌سازی استانداردسازی فونت",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "تنظیمات زبان",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "انتخاب زبان",
+    "description": "Select language label"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Pamantayang Font",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Pamantayang Font",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Pamantayang Font",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Istandardisa ang Font",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Ipatupad ang pamantayang font ng system sa mga web page",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Pinagana ang pag-standardisa ng font",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Hindi pinagana ang pag-standardisa ng font",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Bersyon",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Awtomatikong suporta sa dark mode",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Tugma sa lahat ng browser na nakabase sa Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Paganahin ang pag-standardisa ng font",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Huwag paganahin ang pag-standardisa ng font",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Mga Setting ng Wika",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Pumili ng Wika",
+    "description": "Select language label"
+  }
+}

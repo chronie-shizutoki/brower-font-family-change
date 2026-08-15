@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Typsnittsstandardiserare",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Tillämpa systemtypsnitt på webbsidor, ersätt icke-standardtypsnitt med system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Typsnittsstandardiserare",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standardtypsnitt",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardisera typsnitt",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Tillämpa systemtypsnitt på webbsidor",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Typsnittsstandardisering aktiverad",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Typsnittsstandardisering inaktiverad",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Version",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatiskt stöd för mörkt läge",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Kompatibel med alla Chromium-baserade webbläsare",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Aktivera typsnittsstandardisering",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Inaktivera typsnittsstandardisering",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Språkinställningar",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Välj språk",
+    "description": "Select language label"
+  }
+}

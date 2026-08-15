@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Tiêu Chuẩn Hóa Phông Chữ",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Tiêu Chuẩn Hóa Phông Chữ",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Phông Chữ Chuẩn",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Tiêu Chuẩn Hóa Phông Chữ",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Áp dụng tiêu chuẩn phông chữ hệ thống trên trang web",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Đã bật tiêu chuẩn hóa phông chữ",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Đã tắt tiêu chuẩn hóa phông chữ",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Phiên bản",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Hỗ trợ chế độ tối tự động",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Tương thích với tất cả trình duyệt dựa trên Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Bật tiêu chuẩn hóa phông chữ",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Tắt tiêu chuẩn hóa phông chữ",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Cài đặt Ngôn ngữ",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Chọn Ngôn ngữ",
+    "description": "Select language label"
+  }
+}

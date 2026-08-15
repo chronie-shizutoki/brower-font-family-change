@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "מתקן גופנים",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "אכיפת תקני גופני מערכת בדפי אינטרנט, החלפת גופנים לא תקניים ב-system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "מתקן גופנים",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "גופן תקני",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "תקנון גופן",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "אכיפת תקני גופני מערכת בדפי אינטרנט",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "תקנון גופנים מופעל",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "תקנון גופנים מושבת",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "גרסה",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "תמיכה אוטומטית במצב כהה",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "תואם לכל הדפדפנים מבוססי Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "הפעל תקנון גופנים",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "השבת תקנון גופנים",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "הגדרות שפה",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "בחירת שפה",
+    "description": "Select language label"
+  }
+}

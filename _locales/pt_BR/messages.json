@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Padronizador de Fontes",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Padronizador de Fontes",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Fonte Padrão",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Padronizar Fonte",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Aplicar padrões de fonte do sistema nas páginas da web",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Padronização de fonte ativada",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Padronização de fonte desativada",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versão",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Suporte automático ao modo escuro",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Compatível com todos os navegadores baseados em Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Ativar padronização de fonte",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Desativar padronização de fonte",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Configurações de Idioma",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Selecionar Idioma",
+    "description": "Select language label"
+  }
+}

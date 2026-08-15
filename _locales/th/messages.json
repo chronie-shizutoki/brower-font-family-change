@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "ฟอนต์สแตนดาร์ดไดเซอร์",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "ฟอนต์สแตนดาร์ดไดเซอร์",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "ฟอนต์มาตรฐาน",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "ปรับฟอนต์เป็นมาตรฐาน",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "บังคับใช้ฟอนต์มาตรฐานของระบบบนหน้าเว็บ",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "เปิดใช้งานการปรับฟอนต์เป็นมาตรฐานแล้ว",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "ปิดใช้งานการปรับฟอนต์เป็นมาตรฐานแล้ว",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "เวอร์ชัน",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "รองรับโหมดมืดอัตโนมัติ",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "เข้ากันได้กับเบราว์เซอร์ที่ใช้ Chromium ทุกตัว",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "เปิดใช้งานการปรับฟอนต์เป็นมาตรฐาน",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "ปิดใช้งานการปรับฟอนต์เป็นมาตรฐาน",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "การตั้งค่าภาษา",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "เลือกภาษา",
+    "description": "Select language label"
+  }
+}

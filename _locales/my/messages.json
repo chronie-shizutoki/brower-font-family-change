@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "ဖောင့်စံသတ်မှတ်ကိရိယာ",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "ဖောင့်စံသတ်မှတ်ကိရိယာ",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "စံဖောင့်",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "ဖောင့်ကိုစံသတ်မှတ်ပါ",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "ဝဘ်စာမျက်နှာများပေါ်တွင် စနစ်ဖောင့်စံနှုန်းများကို ကျင့်သုံးပါ",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "ဖောင့်စံသတ်မှတ်ခြင်းကို ဖွင့်ထားသည်",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "ဖောင့်စံသတ်မှတ်ခြင်းကို ပိတ်ထားသည်",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "ဗားရှင်း",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "အလိုအလျောက် အမှောင်မုဒ် ပံ့ပိုးမှု",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Chromium အခြေပြု ဘရောက်ဆာအားလုံးနှင့် တွဲဖက်အသုံးပြုနိုင်သည်",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "ဖောင့်စံသတ်မှတ်ခြင်းကို ဖွင့်ပါ",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "ဖောင့်စံသတ်မှတ်ခြင်းကို ပိတ်ပါ",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "ဘာသာစကား ဆက်တင်များ",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "ဘာသာစကား ရွေးချယ်ပါ",
+    "description": "Select language label"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Estandarditzador de tipus de lletra",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Estandarditzador de tipus de lletra",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Tipus de lletra estàndard",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Estandarditzar tipus de lletra",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Aplica els estàndards de tipus de lletra del sistema a les pàgines web",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Estandardització de tipus de lletra activada",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Estandardització de tipus de lletra desactivada",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versió",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Compatibilitat amb mode fosc automàtic",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Compatible amb tots els navegadors basats en Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Activar l'estandardització de tipus de lletra",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Desactivar l'estandardització de tipus de lletra",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Configuració d'idioma",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Seleccionar idioma",
+    "description": "Select language label"
+  }
+}

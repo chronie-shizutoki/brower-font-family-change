@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Fonta standartizētājs",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Fonta standartizētājs",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standarta fonts",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standartizēt fontu",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Piemērot sistēmas fonta standartus tīmekļa lapās",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Fonta standartizācija ir iespējota",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Fonta standartizācija ir atspējota",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versija",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automātisks tumšā režīma atbalsts",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Saderīgs ar visām Chromium bāzētajām pārlūkprogrammām",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Iespējot fonta standartizāciju",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Atspējot fonta standartizāciju",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Valodas iestatījumi",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Izvēlēties valodu",
+    "description": "Select language label"
+  }
+}

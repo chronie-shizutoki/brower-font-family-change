@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Skrifttypestandardisering",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Håndhæv systemets skrifttypestandarder på websider, og erstat ikke-standard skrifttyper med system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Skrifttypestandardisering",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standardskrifttype",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardisér skrifttype",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Håndhæv systemets skrifttypestandarder på websider",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Skrifttypestandardisering aktiveret",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Skrifttypestandardisering deaktiveret",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Version",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatisk understøttelse af mørk tilstand",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Kompatibel med alle Chromium-baserede browsere",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Aktivér skrifttypestandardisering",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Deaktivér skrifttypestandardisering",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Sprogindstillinger",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Vælg sprog",
+    "description": "Select language label"
+  }
+}

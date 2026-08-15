@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Estandarizador de fuentes",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Aplicar fuentes estándar del sistema en páginas web, reemplazando fuentes no estándar con system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Estandarizador de fuentes",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Fuente estándar",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Estandarizar fuente",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Aplicar fuentes estándar del sistema en páginas web",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Estandarización de fuentes activada",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Estandarización de fuentes desactivada",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versión",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Soporte automático de modo oscuro",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Compatible con todos los navegadores basados en Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Activar estandarización de fuentes",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Desactivar estandarización de fuentes",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Configuración de idioma",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Seleccionar idioma",
+    "description": "Select language label"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Standarisasi Font",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Standarisasi Font",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Font Standar",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standarisasi Font",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Terapkan standar font sistem pada halaman web",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Standarisasi font diaktifkan",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Standarisasi font dinonaktifkan",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versi",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Dukungan mode gelap otomatis",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Kompatibel dengan semua browser berbasis Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Aktifkan standarisasi font",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Nonaktifkan standarisasi font",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Pengaturan Bahasa",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Pilih Bahasa",
+    "description": "Select language label"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Schriftstandardisierer",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Systemschriftarten auf Webseiten durchsetzen, nicht standardmäßige Schriftarten durch system-ui ersetzen",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Schriftstandardisierer",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standardschriftart",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Schriftart standardisieren",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Systemschriftarten auf Webseiten durchsetzen",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Schriftstandardisierung aktiviert",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Schriftstandardisierung deaktiviert",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Version",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatische Dunkelmodus-Unterstützung",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Kompatibel mit allen Chromium-basierten Browsern",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Schriftstandardisierung aktivieren",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Schriftstandardisierung deaktivieren",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Spracheinstellungen",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Sprache auswählen",
+    "description": "Select language label"
+  }
+}

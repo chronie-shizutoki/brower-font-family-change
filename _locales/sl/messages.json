@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Standardizator pisave",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Standardizator pisave",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standardna pisava",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardiziraj pisavo",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Uveljavi standarde sistemske pisave na spletnih straneh",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Standardizacija pisave je omogočena",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Standardizacija pisave je onemogočena",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Različica",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Samodejna podpora za temni način",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Združljivo z vsemi brskalniki na osnovi Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Omogoči standardizacijo pisave",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Onemogoči standardizacijo pisave",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Jezikovne nastavitve",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Izberi jezik",
+    "description": "Select language label"
+  }
+}

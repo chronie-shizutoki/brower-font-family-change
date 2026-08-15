@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Yazı Tipi Standartlaştırıcı",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Web sayfalarında sistem yazı tipi standartlarını uygula, standart olmayan yazı tiplerini system-ui ile değiştir",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Yazı Tipi Standartlaştırıcı",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standart Yazı Tipi",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Yazı Tipini Standartlaştır",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Web sayfalarında sistem yazı tipi standartlarını uygula",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Yazı tipi standartlaştırması etkin",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Yazı tipi standartlaştırması devre dışı",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Sürüm",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Otomatik karanlık mod desteği",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Tüm Chromium tabanlı tarayıcılarla uyumlu",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Yazı tipi standartlaştırmasını etkinleştir",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Yazı tipi standartlaştırmasını devre dışı bırak",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Dil Ayarları",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Dil Seçin",
+    "description": "Select language label"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Fondi standardija",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Fondi standardija",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standardne font",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardiseeri font",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Rakenda veebilehtedel süsteemifondi standardeid",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Fondi standardimine on lubatud",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Fondi standardimine on keelatud",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versioon",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automaatne tumeda režiimi tugi",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Ühildub kõigi Chromiumil põhinevate brauseritega",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Luba fondi standardimine",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Keela fondi standardimine",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Keele seaded",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Vali keel",
+    "description": "Select language label"
+  }
+}

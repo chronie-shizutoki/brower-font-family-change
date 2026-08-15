@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Penyeragaman Fon",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Penyeragaman Fon",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Fon Standard",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Seragamkan Fon",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Menguatkuasakan standard fon sistem pada halaman web",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Penyeragaman fon diaktifkan",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Penyeragaman fon dinyahaktifkan",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versi",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Sokongan mod gelap automatik",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Serasi dengan semua pelayar berasaskan Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Aktifkan penyeragaman fon",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Nyahaktifkan penyeragaman fon",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Tetapan Bahasa",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Pilih Bahasa",
+    "description": "Select language label"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Стандардизатор фонта",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Стандардизатор фонта",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Стандардни фонт",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Стандардизуј фонт",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Примени стандарде системског фонта на веб страницама",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Стандардизација фонта је омогућена",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Стандардизација фонта је онемогућена",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Верзија",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Аутоматска подршка за тамни режим",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Компатибилно са свим прегледачима заснованим на Chromium-у",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Омогући стандардизацију фонта",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Онемогући стандардизацију фонта",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Подешавања језика",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Изабери језик",
+    "description": "Select language label"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "موحد الخطوط",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "فرض معايير خطوط النظام على صفحات الويب، واستبدال الخطوط غير القياسية بـ system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "موحد الخطوط",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "الخط القياسي",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "توحيد الخط",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "فرض معايير خطوط النظام على صفحات الويب",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "تم تفعيل توحيد الخطوط",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "تم تعطيل توحيد الخطوط",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "الإصدار",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "دعم تلقائي للوضع الداكن",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "متوافق مع جميع المتصفحات المبنية على Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "تفعيل توحيد الخطوط",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "تعطيل توحيد الخطوط",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "إعدادات اللغة",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "اختيار اللغة",
+    "description": "Select language label"
+  }
+}

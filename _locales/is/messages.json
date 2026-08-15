@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Leturgerðarstaðall",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Leturgerðarstaðall",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Staðlað letur",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Staðla letur",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Framfylgja staðlaðri leturgerð kerfisins á vefsíðum",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Leturstöðlun virkjuð",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Leturstöðlun óvirk",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Útgáfa",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Sjálfvirkur dökkur hamur studdur",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Samhæft við alla Chromium-byggða vafra",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Virkja leturstöðlun",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Gera leturstöðlun óvirka",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Tungumálastillingar",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Velja tungumál",
+    "description": "Select language label"
+  }
+}

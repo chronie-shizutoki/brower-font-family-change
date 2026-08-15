@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Стандартизатор шрифтов",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Применение системных шрифтов на веб-страницах, замена нестандартных шрифтов на system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Стандартизатор шрифтов",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Стандартный шрифт",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Стандартизировать шрифт",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Применение системных шрифтов на веб-страницах",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Стандартизация шрифтов включена",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Стандартизация шрифтов отключена",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Версия",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Автоматическая поддержка тёмного режима",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Совместимо со всеми браузерами на основе Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Включить стандартизацию шрифтов",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Отключить стандартизацию шрифтов",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Настройки языка",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Выбрать язык",
+    "description": "Select language label"
+  }
+}

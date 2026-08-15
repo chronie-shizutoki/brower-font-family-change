@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "ফন্ট স্ট্যান্ডার্ডাইজার",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "ফন্ট স্ট্যান্ডার্ডাইজার",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "মানক ফন্ট",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "ফন্ট মানসম্মত করুন",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "ওয়েব পৃষ্ঠাগুলিতে সিস্টেম ফন্ট মান প্রয়োগ করুন",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "ফন্ট মানসম্মতকরণ সক্রিয়",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "ফন্ট মানসম্মতকরণ নিষ্ক্রিয়",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "সংস্করণ",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "স্বয়ংক্রিয় ডার্ক মোড সমর্থন",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "সমস্ত Chromium-ভিত্তিক ব্রাউজারের সাথে সামঞ্জস্যপূর্ণ",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "ফন্ট মানসম্মতকরণ সক্রিয় করুন",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "ফন্ট মানসম্মতকরণ নিষ্ক্রিয় করুন",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "ভাষা সেটিংস",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "ভাষা নির্বাচন করুন",
+    "description": "Select language label"
+  }
+}

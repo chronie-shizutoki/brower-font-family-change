@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Standardizuesi i shkronjave",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Standardizuesi i shkronjave",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Shkronja standarde",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardizo shkronjat",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Zbato standardet e shkronjave të sistemit në faqet e internetit",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Standardizimi i shkronjave i aktivizuar",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Standardizimi i shkronjave i çaktivizuar",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versioni",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Mbështetje automatike për modalitetin e errët",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "E përputhshme me të gjithë shfletuesit e bazuar në Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Aktivizo standardizimin e shkronjave",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Çaktivizo standardizimin e shkronjave",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Cilësimet e gjuhës",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Zgjidh gjuhën",
+    "description": "Select language label"
+  }
+}

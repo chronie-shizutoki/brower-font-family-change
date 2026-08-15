@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Standardizator fonta",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Standardizator fonta",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standardni font",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardiziraj font",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Primijeni standarde sistemskog fonta na web stranicama",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Standardizacija fonta je omogućena",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Standardizacija fonta je onemogućena",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Verzija",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatska podrška za tamni način rada",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Kompatibilno sa svim preglednicima baziranim na Chromiumu",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Omogući standardizaciju fonta",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Onemogući standardizaciju fonta",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Jezične postavke",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Odaberi jezik",
+    "description": "Select language label"
+  }
+}

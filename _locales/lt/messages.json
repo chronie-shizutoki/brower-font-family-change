@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Šrifto standartizatorius",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Šrifto standartizatorius",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standartinis šriftas",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standartizuoti šriftą",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Taikyti sistemos šrifto standartus tinklalapiuose",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Šrifto standartizacija įjungta",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Šrifto standartizacija išjungta",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Versija",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatinis tamsaus režimo palaikymas",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Suderinama su visomis Chromium pagrindu veikiančiomis naršyklėmis",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Įjungti šrifto standartizaciją",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Išjungti šrifto standartizaciją",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Kalbos nustatymai",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Pasirinkti kalbą",
+    "description": "Select language label"
+  }
+}

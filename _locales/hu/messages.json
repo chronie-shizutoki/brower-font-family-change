@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Betűtípus-szabványosító",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Rendszerbetűtípus-szabványok érvényesítése weboldalakon, a nem szabványos betűtípusok cseréje system-ui-ra",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Betűtípus-szabványosító",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Szabványos betűtípus",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Betűtípus szabványosítása",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Rendszerbetűtípus-szabványok érvényesítése weboldalakon",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Betűtípus-szabványosítás engedélyezve",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Betűtípus-szabványosítás letiltva",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Verzió",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatikus sötét mód támogatás",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Kompatibilis az összes Chromium-alapú böngészővel",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Betűtípus-szabványosítás engedélyezése",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Betűtípus-szabványosítás letiltása",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Nyelvi beállítások",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Nyelv kiválasztása",
+    "description": "Select language label"
+  }
+}

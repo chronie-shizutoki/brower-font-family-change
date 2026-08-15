@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Τυποποιητής Γραμματοσειρών",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Επιβολή προτύπων γραμματοσειρών συστήματος σε ιστοσελίδες, αντικαθιστώντας τις μη τυποποιημένες γραμματοσειρές με system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Τυποποιητής Γραμματοσειρών",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Τυποποιημένη Γραμματοσειρά",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Τυποποίηση Γραμματοσειράς",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Επιβολή προτύπων γραμματοσειρών συστήματος σε ιστοσελίδες",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Η τυποποίηση γραμματοσειράς είναι ενεργοποιημένη",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Η τυποποίηση γραμματοσειράς είναι απενεργοποιημένη",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Έκδοση",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Αυτόματη υποστήριξη σκοτεινής λειτουργίας",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Συμβατό με όλα τα προγράμματα περιήγησης που βασίζονται σε Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Ενεργοποίηση τυποποίησης γραμματοσειράς",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Απενεργοποίηση τυποποίησης γραμματοσειράς",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Ρυθμίσεις Γλώσσας",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Επιλογή Γλώσσας",
+    "description": "Select language label"
+  }
+}

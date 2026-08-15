@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Стандартизатор на шрифтове",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Налага стандарти за системни шрифтове на уеб страници, заменяйки нестандартните шрифтове с system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Стандартизатор на шрифтове",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Стандартен шрифт",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Стандартизиране на шрифта",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Налага стандарти за системни шрифтове на уеб страници",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Стандартизацията на шрифта е активирана",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Стандартизацията на шрифта е деактивирана",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Версия",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Автоматична поддръжка на тъмен режим",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Съвместим с всички браузъри, базирани на Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Активиране на стандартизацията на шрифта",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Деактивиране на стандартизацията на шрифта",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Езикови настройки",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Избор на език",
+    "description": "Select language label"
+  }
+}

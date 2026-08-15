@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "ເຄື່ອງມືກຳນົດມາດຕະຖານຟອນ",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "ເຄື່ອງມືກຳນົດມາດຕະຖານຟອນ",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "ຟອນມາດຕະຖານ",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "ກຳນົດມາດຕະຖານຟອນ",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "ບັງຄັບໃຊ້ມາດຕະຖານຟອນລະບົບເທິງໜ້າເວັບ",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "ເປີດການກຳນົດມາດຕະຖານຟອນແລ້ວ",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "ປິດການກຳນົດມາດຕະຖານຟອນແລ້ວ",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "ເວີຊັນ",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "ຮອງຮັບໂໝດມືດແບບອັດຕະໂນມັດ",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "ເຂົ້າກັນໄດ້ກັບບຣາວເຊີທີ່ໃຊ້ Chromium ທັງໝົດ",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "ເປີດການກຳນົດມາດຕະຖານຟອນ",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "ປິດການກຳນົດມາດຕະຖານຟອນ",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "ການຕັ້ງຄ່າພາສາ",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "ເລືອກພາສາ",
+    "description": "Select language label"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Standardyzator czcionek",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Wymuszanie standardowych czcionek systemowych na stronach internetowych, zastępowanie niestandardowych czcionek przez system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Standardyzator czcionek",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Czcionka standardowa",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standaryzuj czcionkę",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Wymuszanie standardowych czcionek systemowych na stronach internetowych",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Standaryzacja czcionek włączona",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Standaryzacja czcionek wyłączona",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Wersja",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatyczna obsługa trybu ciemnego",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Kompatybilny ze wszystkimi przeglądarkami opartymi na Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Włącz standaryzację czcionek",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Wyłącz standaryzację czcionek",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Ustawienia języka",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Wybierz język",
+    "description": "Select language label"
+  }
+}

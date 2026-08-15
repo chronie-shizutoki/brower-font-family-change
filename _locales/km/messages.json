@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "កម្មវិធីកំណត់ស្តង់ដារពុម្ពអក្សរ",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "កម្មវិធីកំណត់ស្តង់ដារពុម្ពអក្សរ",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "ពុម្ពអក្សរស្តង់ដារ",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "កំណត់ស្តង់ដារពុម្ពអក្សរ",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "អនុវត្តស្តង់ដារពុម្ពអក្សរប្រព័ន្ធលើទំព័របណ្តាញ",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "បានបើកការកំណត់ស្តង់ដារពុម្ពអក្សរ",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "បានបិទការកំណត់ស្តង់ដារពុម្ពអក្សរ",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "កំណែ",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "គាំទ្ររបៀបងងឹតដោយស្វ័យប្រវត្តិ",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "ឆបគ្នាជាមួយកម្មវិធីរុករកដែលមានមូលដ្ឋាន Chromium ទាំងអស់",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "បើកការកំណត់ស្តង់ដារពុម្ពអក្សរ",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "បិទការកំណត់ស្តង់ដារពុម្ពអក្សរ",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "ការកំណត់ភាសា",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "ជ្រើសរើសភាសា",
+    "description": "Select language label"
+  }
+}

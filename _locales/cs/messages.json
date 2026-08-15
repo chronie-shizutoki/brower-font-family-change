@@ -1,0 +1,70 @@
+{
+  "extensionName": {
+    "message": "Standardizátor písma",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Vynucuje standardy systémových písem na webových stránkách a nahrazuje nestandardní písma pomocí system-ui",
+    "description": "Extension description"
+  },
+  "headerTitle": {
+    "message": "Standardizátor písma",
+    "description": "Main title in popup"
+  },
+  "headerSubtitle": {
+    "message": "System Font Standard",
+    "description": "Subtitle in popup"
+  },
+  "currentFont": {
+    "message": "Standardní písmo",
+    "description": "Current font label"
+  },
+  "fontName": {
+    "message": "system-ui",
+    "description": "Font name"
+  },
+  "forceFont": {
+    "message": "Standardizovat písmo",
+    "description": "Force font toggle label"
+  },
+  "forceFontDesc": {
+    "message": "Vynucuje standardy systémových písem na webových stránkách",
+    "description": "Force font toggle description"
+  },
+  "statusEnabled": {
+    "message": "Standardizace písma povolena",
+    "description": "Status when font forcing is enabled"
+  },
+  "statusDisabled": {
+    "message": "Standardizace písma zakázána",
+    "description": "Status when font forcing is disabled"
+  },
+  "version": {
+    "message": "Verze",
+    "description": "Version label"
+  },
+  "darkModeSupport": {
+    "message": "Automatická podpora tmavého režimu",
+    "description": "Dark mode support text"
+  },
+  "browserCompatibility": {
+    "message": "Kompatibilní se všemi prohlížeči založenými na Chromium",
+    "description": "Browser compatibility text"
+  },
+  "enableFontForce": {
+    "message": "Povolit standardizaci písma",
+    "description": "Enable font force aria label"
+  },
+  "disableFontForce": {
+    "message": "Zakázat standardizaci písma",
+    "description": "Disable font force aria label"
+  },
+  "languageSettings": {
+    "message": "Jazyková nastavení",
+    "description": "Language settings label"
+  },
+  "selectLanguage": {
+    "message": "Vybrat jazyk",
+    "description": "Select language label"
+  }
+}
