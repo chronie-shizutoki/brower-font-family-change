@@ -1,42 +1,42 @@
 {
   "extensionName": {
-    "message": "字体强制器",
+    "message": "字体标准化",
     "description": "Extension name"
   },
   "extensionDescription": {
-    "message": "强制页面字体设置为LXGWWenKaiGB-Regular，支持自动深色模式",
+    "message": "要求网页字体遵守系统字体标准，将非标准字体统一替换为 system-ui",
     "description": "Extension description"
   },
   "headerTitle": {
-    "message": "字体强制器",
+    "message": "字体标准化",
     "description": "Main title in popup"
   },
   "headerSubtitle": {
-    "message": "Font Force Extension",
+    "message": "System Font Standard",
     "description": "Subtitle in popup"
   },
   "currentFont": {
-    "message": "当前字体",
+    "message": "标准字体",
     "description": "Current font label"
   },
   "fontName": {
-    "message": "LXGWWenKaiGB-Regular",
+    "message": "system-ui",
     "description": "Font name"
   },
   "forceFont": {
-    "message": "强制字体",
+    "message": "字体标准化",
     "description": "Force font toggle label"
   },
   "forceFontDesc": {
-    "message": "在所有网页上应用指定字体",
+    "message": "要求网页字体遵守系统字体标准",
     "description": "Force font toggle description"
   },
   "statusEnabled": {
-    "message": "字体强制已启用",
+    "message": "字体标准化已启用",
     "description": "Status when font forcing is enabled"
   },
   "statusDisabled": {
-    "message": "字体强制已禁用",
+    "message": "字体标准化已禁用",
     "description": "Status when font forcing is disabled"
   },
   "version": {
@@ -52,11 +52,11 @@
     "description": "Browser compatibility text"
   },
   "enableFontForce": {
-    "message": "启用字体强制",
+    "message": "启用字体标准化",
     "description": "Enable font force aria label"
   },
   "disableFontForce": {
-    "message": "禁用字体强制",
+    "message": "禁用字体标准化",
     "description": "Disable font force aria label"
   },
   "languageSettings": {

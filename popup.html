@@ -4,31 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Load fonts */
-        @font-face {
-            font-family: 'LXGWWenKaiGB-Regular';
-            src: url('LXGWWenKaiGB-Regular.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: 'LXGWWenKaiTC-Regular';
-            src: url('LXGWWenKaiTC-Regular.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: 'KleeOne-Regular';
-            src: url('KleeOne-Regular.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
         :root {
             /* Light mode variables */
             --bg-primary: #ffffff;
@@ -79,7 +54,7 @@
             width: 280px;
             margin: 0;
             padding: 0;
-            font-family: KleeOne-Regular, LXGWWenKaiTC-Regular, LXGWWenKaiGB-Regular, sans-serif;
+            font-family: system-ui, sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             transition: all 0.3s ease;
@@ -217,8 +192,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 0 0 0;
-            border-top: 1px solid var(--border-color);
         }
 
         .toggle-info {
@@ -438,14 +411,6 @@
 <body>
     <div class="content">
         <div class="status-card">
-            <div class="font-info">
-                <div class="font-icon">Aa</div>
-                <div class="font-details">
-                    <h3 data-i18n="currentFont">Current Font</h3>
-                    <div class="font-name" data-i18n="fontName">LXGWWenKaiGB-Regular</div>
-                </div>
-            </div>
-            
             <div class="toggle-section">
                 <div class="toggle-info">
                     <div class="toggle-label" data-i18n="forceFont">Force Font</div>

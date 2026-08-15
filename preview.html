@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plugin interface preview</title>
+    <title>Plugin Interface Preview</title>
     <style>
         body {
             margin: 0;
             padding: 40px;
             background: #f0f2f5;
-            font-family: 'KleeOne-Regular', 'LXGWWenKaiTC-Regular', 'LXGWWenKaiGB-Regular', sans-serif;
+            font-family: system-ui, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,6 +20,8 @@
             display: flex;
             gap: 40px;
             align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         
         .theme-label {
@@ -48,8 +50,15 @@
         h1 {
             text-align: center;
             color: #333;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             font-size: 28px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 40px;
+            font-size: 16px;
         }
         
         .description {
@@ -91,20 +100,43 @@
 </head>
 <body>
     <div>
-        <h1>🎨 Font force - New interface design</h1>
+        <h1>Font Replacer - Interface Preview</h1>
+        <p class="subtitle">Replaces specified Chinese fonts with system-ui on web pages</p>
         
         <div class="preview-container">
             <div>
-                <div class="theme-label">Light mode</div>
+                <div class="theme-label">Light Mode</div>
                 <div class="popup-frame">
                     <iframe src="popup.html" width="360" height="400" frameborder="0"></iframe>
                 </div>
             </div>
             
             <div>
-                <div class="theme-label">Dark mode effect</div>
+                <div class="theme-label">Dark Mode Effect</div>
                 <div class="popup-frame dark-preview">
                     <iframe src="popup.html" width="360" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="description">
+            <h2>How It Works</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Targeted Replacement</h3>
+                    <p>Only replaces fonts like Microsoft YaHei, DengXian, MiSans, PingFang, etc. with system-ui. Other fonts are left untouched.</p>
+                </div>
+                <div class="feature">
+                    <h3>Icon Protection</h3>
+                    <p>Font Awesome, Material Icons, Google Symbols, and other icon fonts are automatically preserved.</p>
+                </div>
+                <div class="feature">
+                    <h3>Dynamic Content</h3>
+                    <p>Monitors DOM changes and applies replacement to newly added elements in real-time.</p>
+                </div>
+                <div class="feature">
+                    <h3>Multi-language</h3>
+                    <p>Supports Simplified Chinese, Traditional Chinese, English, Japanese, and Korean interfaces.</p>
                 </div>
             </div>
         </div>

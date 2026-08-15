@@ -1,42 +1,42 @@
 {
   "extensionName": {
-    "message": "폰트 강제기",
+    "message": "폰트 표준화",
     "description": "Extension name"
   },
   "extensionDescription": {
-    "message": "웹페이지 폰트를 LXGWWenKaiGB-Regular로 강제 설정, 자동 다크모드 지원",
+    "message": "웹페이지 폰트를 시스템 표준으로 통일, 비표준 폰트를 system-ui로 교체",
     "description": "Extension description"
   },
   "headerTitle": {
-    "message": "폰트 강제기",
+    "message": "폰트 표준화",
     "description": "Main title in popup"
   },
   "headerSubtitle": {
-    "message": "Font Force Extension",
+    "message": "System Font Standard",
     "description": "Subtitle in popup"
   },
   "currentFont": {
-    "message": "현재 폰트",
+    "message": "표준 폰트",
     "description": "Current font label"
   },
   "fontName": {
-    "message": "LXGWWenKaiGB-Regular",
+    "message": "system-ui",
     "description": "Font name"
   },
   "forceFont": {
-    "message": "폰트 강제",
+    "message": "폰트 표준화",
     "description": "Force font toggle label"
   },
   "forceFontDesc": {
-    "message": "모든 웹페이지에 지정된 폰트 적용",
+    "message": "웹페이지 폰트를 시스템 표준으로 통일",
     "description": "Force font toggle description"
   },
   "statusEnabled": {
-    "message": "폰트 강제가 활성화됨",
+    "message": "폰트 표준화가 활성화됨",
     "description": "Status when font forcing is enabled"
   },
   "statusDisabled": {
-    "message": "폰트 강제가 비활성화됨",
+    "message": "폰트 표준화가 비활성화됨",
     "description": "Status when font forcing is disabled"
   },
   "version": {
@@ -52,11 +52,11 @@
     "description": "Browser compatibility text"
   },
   "enableFontForce": {
-    "message": "폰트 강제 활성화",
+    "message": "폰트 표준화 활성화",
     "description": "Enable font force aria label"
   },
   "disableFontForce": {
-    "message": "폰트 강제 비활성화",
+    "message": "폰트 표준화 비활성화",
     "description": "Disable font force aria label"
   },
   "languageSettings": {

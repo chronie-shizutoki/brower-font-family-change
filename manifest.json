@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extensionName__",
-  "version": "1.2.0",
+  "version": "2026.8.16",
   "description": "__MSG_extensionDescription__",
   "default_locale": "zh_CN",
   "icons": {
@@ -27,11 +27,7 @@
   ],
   "web_accessible_resources": [
     {
-        "resources": [
-          "LXGWWenKaiGB-Regular.woff2",
-          "LXGWWenKaiTC-Regular.woff2",
-          "KleeOne-Regular.woff2"
-        ],
+        "resources": [],
         "matches": ["<all_urls>"]
     }
   ],

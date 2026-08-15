@@ -1,42 +1,42 @@
 {
   "extensionName": {
-    "message": "フォント強制器",
+    "message": "フォント標準化",
     "description": "Extension name"
   },
   "extensionDescription": {
-    "message": "ウェブページのフォントをKleeOne-Regularに強制設定、自動ダークモード対応",
+    "message": "ウェブページのフォントをシステム標準に統一し、非標準フォントをsystem-uiに置換",
     "description": "Extension description"
   },
   "headerTitle": {
-    "message": "フォント強制器",
+    "message": "フォント標準化",
     "description": "Main title in popup"
   },
   "headerSubtitle": {
-    "message": "Font Force Extension",
+    "message": "System Font Standard",
     "description": "Subtitle in popup"
   },
   "currentFont": {
-    "message": "現在のフォント",
+    "message": "標準フォント",
     "description": "Current font label"
   },
   "fontName": {
-    "message": "KleeOne-Regular",
+    "message": "system-ui",
     "description": "Font name"
   },
   "forceFont": {
-    "message": "フォント強制",
+    "message": "フォント標準化",
     "description": "Force font toggle label"
   },
   "forceFontDesc": {
-    "message": "すべてのウェブページに指定フォントを適用",
+    "message": "ウェブページのフォントをシステム標準に統一",
     "description": "Force font toggle description"
   },
   "statusEnabled": {
-    "message": "フォント強制が有効",
+    "message": "フォント標準化が有効",
     "description": "Status when font forcing is enabled"
   },
   "statusDisabled": {
-    "message": "フォント強制が無効",
+    "message": "フォント標準化が無効",
     "description": "Status when font forcing is disabled"
   },
   "version": {
@@ -52,11 +52,11 @@
     "description": "Browser compatibility text"
   },
   "enableFontForce": {
-    "message": "フォント強制を有効にする",
+    "message": "フォント標準化を有効にする",
     "description": "Enable font force aria label"
   },
   "disableFontForce": {
-    "message": "フォント強制を無効にする",
+    "message": "フォント標準化を無効にする",
     "description": "Disable font force aria label"
   },
   "languageSettings": {

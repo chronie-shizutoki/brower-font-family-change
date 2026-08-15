@@ -3,7 +3,6 @@ let toggleBtn, statusDot, statusText, languageSelect;
 let languageSelectButton, languageSelectLabel, languageOptionsContainer, languageOptions;
 
 function updateUI(isEnabled) { 
-    // Update toggle switch status
     if (isEnabled) { 
         toggleBtn.classList.add('active'); 
         toggleBtn.setAttribute('aria-checked', 'true'); 
@@ -12,7 +11,6 @@ function updateUI(isEnabled) {
         toggleBtn.setAttribute('aria-checked', 'false'); 
     } 
     
-    // Update status indicator
     if (statusDot) { 
         if (isEnabled) { 
             statusDot.classList.remove('inactive'); 
@@ -21,12 +19,10 @@ function updateUI(isEnabled) {
         } 
     } 
     
-    // Add accessibility attributes 
     toggleBtn.setAttribute('role', 'switch'); 
     toggleBtn.setAttribute('tabindex', '0'); 
     toggleBtn.setAttribute('aria-label', isEnabled ? (chrome.i18n.getMessage('disableFontForce') || 'Disable font force') : (chrome.i18n.getMessage('enableFontForce') || 'Enable font force')); 
     
-    // Update status text 
     updateStatusText(); 
 }
 
@@ -43,6 +39,7 @@ function closeLanguageDropdown() {
     languageOptionsContainer.setAttribute('aria-hidden', 'true');
     languageOptionsContainer.classList.remove('open');
 }
+
 function setLanguageOption(value) {
     if (!languageSelect) return;
     languageSelect.value = value;
@@ -66,7 +63,6 @@ function syncLanguageUI(language) {
     languageSelect.value = language;
 }
 
-// Add smooth animation effect 
 function addRippleEffect(element, event) { 
     const ripple = document.createElement('span'); 
     const rect = element.getBoundingClientRect(); 
@@ -87,7 +83,6 @@ function addRippleEffect(element, event) {
         pointer-events: none; 
     `; 
     
-    // Add ripple animation style 
     if (!document.getElementById('ripple-style')) { 
         const style = document.createElement('style'); 
         style.id = 'ripple-style'; 
@@ -121,16 +116,12 @@ document.addEventListener('DOMContentLoaded', function() {
     languageOptionsContainer = document.getElementById('languageOptions');
     languageOptions = Array.from(document.querySelectorAll('.custom-option'));
     
-    // Initialize internationalization
     initializeI18n(); 
     
-    // Load current state 
     loadCurrentState(); 
     
-    // Bind toggle button event 
     toggleBtn.addEventListener('click', toggleFontForce); 
     
-    // Bind language selector event 
     languageSelectButton.addEventListener('click', toggleLanguageDropdown);
     languageOptions.forEach(option => {
         option.addEventListener('click', () => setLanguageOption(option.dataset.value));
@@ -149,8 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    
-    // Add keyboard support 
     toggleBtn.addEventListener('keydown', function(e) { 
         if (e.key === 'Enter' || e.key === ' ') { 
             e.preventDefault(); 
@@ -158,34 +147,27 @@ document.addEventListener('DOMContentLoaded', function() {
         } 
     }); 
     
-    // Detect system theme change 
     if (window.matchMedia) { 
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)'); 
         mediaQuery.addListener(function(e) { 
-            // Additional processing logic can be added when the theme changes
             console.log('Theme changed to:', e.matches ? 'dark' : 'light'); 
         }); 
     } 
     
-    // Add page load animation 
     setTimeout(() => { 
         document.body.style.opacity = '1'; 
     }, 100); 
- });
+});
 
-// Internationalization related functions
 // Translation cache
 let translations = {};
 
-// Load translation file
 function loadTranslations(language, callback) {
-    // If the translation for the language has already been loaded, call the callback directly
     if (translations[language]) {
         callback();
         return;
     }
     
-    // Load the translation file
     fetch(`_locales/${language}/messages.json`)
         .then(response => {
             if (!response.ok) {
@@ -199,74 +181,48 @@ function loadTranslations(language, callback) {
         })
         .catch(error => {
             console.error(error);
-            // If loading fails, use the default language
             if (language !== 'en') {
                 loadTranslations('en', callback);
             } else {
-                // If loading fails and the default language is also not available, use the original message key
                 callback(messageKey);
             }
         });
 }
 
-// Get translation text
 function getMessage(messageKey, language) {
     if (!translations[language] || !translations[language][messageKey]) {
-        // If the translation is not found, try using the default language
         if (language !== 'en' && translations['en'] && translations['en'][messageKey]) {
             return translations['en'][messageKey].message;
         }
-        // If the translation is not found in the default language, return the original message key
         return messageKey;
     }
     return translations[language][messageKey].message;
 }
 
 function initializeI18n() {
-    // Load the saved language setting
     chrome.storage.sync.get(['selectedLanguage'], function(result) {
         const savedLanguage = result.selectedLanguage || chrome.i18n.getUILanguage().replace('-', '_');
         const languageSelect = document.getElementById('languageSelect');
         
-        // Set the value of the language selector
         if (languageSelect) {
             languageSelect.value = savedLanguage;
         }
         syncLanguageUI(savedLanguage);
         
-        // Immediately update the font (no need to wait for translation loading)
         updateFontFamily(savedLanguage);
         
-        // Load translations
         loadTranslations(savedLanguage, function() {
-            // Apply translations
             applyTranslations(savedLanguage);
         });
     });
 }
 
-// Update font family based on language
+// Update popup font family based on language (popup always uses system-ui)
 function updateFontFamily(language) {
-    const body = document.body;
-    
-    // Font mapping relationship
-    const fontMap = {
-        'zh_CN': 'LXGWWenKaiGB-Regular',
-        'zh_TW': 'LXGWWenKaiTC-Regular',
-        'ko': 'LXGWWenKaiGB-Regular',
-        'ja': 'KleeOne-Regular',
-        'en': 'KleeOne-Regular'
-    };
-    
-    // Get the font corresponding to the current language
-    const font = fontMap[language] || 'KleeOne-Regular';
-    
-    // Set the font of the body
-    body.style.fontFamily = `${font}, sans-serif`;
+    document.body.style.fontFamily = 'system-ui, sans-serif';
 }
 
 function applyTranslations(language) {
-    // Get all elements with the data-i18n attribute
     const elements = document.querySelectorAll('[data-i18n]');
     
     elements.forEach(element => {
@@ -278,10 +234,7 @@ function applyTranslations(language) {
         }
     });
     
-    // Update status text
     updateStatusText(language);
-    
-    // Update font
     updateFontFamily(language);
 }
 
@@ -289,21 +242,18 @@ function changeLanguage() {
     const languageSelect = document.getElementById('languageSelect');
     const selectedLanguage = languageSelect.value;
     
-    // Save language settings
     chrome.storage.sync.set({selectedLanguage: selectedLanguage}, function() {
-        // Load translations for the new language and apply
         loadTranslations(selectedLanguage, function() {
             applyTranslations(selectedLanguage);
         });
         
-        // Notify the content script of the language change
         chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
             if (tabs[0]) {
                 chrome.tabs.sendMessage(tabs[0].id, {
                     action: 'changeLanguage',
                     language: selectedLanguage
                 }).catch(() => {
-                    // Ignore errors, may be the content script has not been loaded yet
+                    // Ignore errors
                 });
             }
         });
@@ -325,22 +275,18 @@ function updateStatusText(language) {
     }
 }
 
-// Load current state function
 function loadCurrentState() {
     chrome.storage.sync.get(['fontForceEnabled'], function(result) {
-        const isEnabled = result.fontForceEnabled !== false; // Default is enabled
+        const isEnabled = result.fontForceEnabled !== false;
         updateUI(isEnabled);
     });
 }
 
-// Toggle font force function
 function toggleFontForce() {
     const toggleBtn = document.getElementById('toggleBtn');
     
-    // Add click ripple effect
     addRippleEffect(toggleBtn, event);
     
-    // Add haptic feedback (if supported)
     if (navigator.vibrate) {
         navigator.vibrate(50);
     }
@@ -349,18 +295,16 @@ function toggleFontForce() {
         const currentState = result.fontForceEnabled !== false;
         const newState = !currentState;
         
-        // Save new state
         chrome.storage.sync.set({fontForceEnabled: newState}, function() {
             updateUI(newState);
             
-            // Notify the content script of the state change
             chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
                 if (tabs[0]) {
                     chrome.tabs.sendMessage(tabs[0].id, {
                         action: 'toggleFontForce',
                         enabled: newState
                     }).catch(() => {
-                        // Ignore errors, may be the content script has not been loaded yet
+                        // Ignore errors
                     });
                 }
             });

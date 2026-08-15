@@ -1,85 +1,103 @@
-# Chrome Browser Font Force Plugin
+# Font Replacer - Chrome Extension
 
-This is a Chrome browser extension that can force all web pages to use the custom font.
+A Chrome browser extension that replaces specified Chinese fonts (Microsoft YaHei, DengXian, MiSans, PingFang, etc.) with `system-ui` on web pages.
 
 ## Features
 
-- 🎨 Force all web pages to use the custom font
-- 🔄 Real-time monitoring of page changes to ensure that dynamically loaded content also uses the specified font
-- 🎛️ Enable/disable the font forcing function via the extension icon
-- 💪 Use the `!important` rule to ensure the highest font priority
-- 🚀 Support all websites, including form elements such as input boxes and buttons
+- Targeted replacement: only replaces elements using specified fonts (微软雅黑/等线/小米字体/苹果字体 etc.), leaving other fonts untouched
+- Icon protection: automatically preserves Font Awesome, Material Icons, Google Symbols, and other icon fonts
+- Real-time monitoring: watches DOM changes and applies replacement to dynamically loaded content
+- Multi-language support: UI available in Simplified Chinese, Traditional Chinese, English, Japanese, and Korean
+- Enable/disable toggle via extension popup
+- Dark mode support in popup UI
 
-## Installation Methods
+## Installation
 
-### Method 1: Install in Developer Mode (Recommended)
+### Developer Mode (Recommended)
 
-1. Open the Chrome browser
-2. Enter `chrome://extensions/` in the address bar and press Enter
-3. Turn on the "Developer mode" switch in the upper-right corner
-4. Click "Load unpacked"
-5. Select the folder containing the extension files (i.e., the current folder)
-6. Once the installation is complete, the extension will be displayed in the extensions list
+1. Open Chrome and navigate to `chrome://extensions/`
+2. Enable "Developer mode" (top-right toggle)
+3. Click "Load unpacked"
+4. Select the extension folder
+5. The extension will appear in your extensions list
 
-### Method 2: Install via Packaged File
+### Packaged File
 
-1. Click "Pack extension" on the Chrome extensions page
+1. On the Chrome extensions page, click "Pack extension"
 2. Select the extension folder to generate a `.crx` file
-3. Drag and drop the `.crx` file onto the Chrome extensions page to install
+3. Drag the `.crx` file onto the Chrome extensions page
 
 ## Usage
 
-1. After installing the extension, an icon will appear in the browser toolbar
-2. Visit any web page, and the font will be automatically forced to the custom font
-3. Click the extension icon to open the control panel
-4. You can enable or disable the font forcing function in the control panel
+1. After installation, an icon appears in the browser toolbar
+2. Visit any web page — elements using targeted Chinese fonts will be automatically replaced with `system-ui`
+3. Click the extension icon to toggle font replacement on/off
+4. Use the language selector to switch the popup UI language
+
+## How It Works
+
+1. Scans all DOM elements and checks their computed `font-family`
+2. If an element's font matches any target font (e.g., Microsoft YaHei, SimSun, etc.), it's marked with a `data-force-font` attribute
+3. A CSS rule `[data-force-font] { font-family: system-ui, sans-serif !important; }` handles the actual replacement
+4. A `MutationObserver` watches for new elements and applies the same logic
+5. Icon elements are automatically skipped to preserve their icon fonts
+
+### Target Fonts
+
+The following fonts are replaced with `system-ui`:
+
+- **Microsoft YaHei** / 微软雅黑
+- **DengXian** / 等线
+- **MiSans** / 小米字体
+- **PingFang SC/TC/HK** / 苹方 / 苹果字体
+- **SimSun** / 宋体
+- **SimHei** / 黑体
+- **KaiTi** / 楷体
+- **FangSong** / 仿宋
+- **NSimSun** / 新宋体
+- **Microsoft JhengHei** / 微軟正黑體
+- **PMingLiU** / 新細明體
+- **MingLiU** / 細明體
+- **DFKai-SB** / 標楷體
+
+To add or remove target fonts, edit the `targetFonts` array in `content.js`.
 
 ## File Structure
 
 ```
-├── _locales                  # Localization files
-│   ├── en                    # English localization
-│   │   └── messages.json     # English messages
-│   ├── zh_CN                 # Simplified Chinese localization
-│   │   └── messages.json     # Simplified Chinese messages
-│   ├── zh_TW                 # Traditional Chinese localization
-│   │   └── messages.json     # Traditional Chinese messages
-│   ├── ja                    # Japanese localization
-│   │   └── messages.json     # Japanese messages
-│   ├── ko                    # Korean localization
-│   │   └── messages.json     # Korean messages
-├── manifest.json             # Plugin configuration file
-├── content.css               # Font style file
-├── content.js                # Content script
-├── popup.html                # Popup window interface
-├── popup.js                  # Popup window logic
-├── LXGWWenKaiGB-Regular.woff2 # Font file (GB,KO)
-├── LXGWWenKaiTC-Regular.woff2 # Font file (TC)
-├── KleeOne-Regular.woff2     # Font file (JP,others)
-├── OFL_GB.txt                # Derived font license (GB,KO)
-├── OFL_TC.txt                # Derived font license (TC)
-├── OFL_origin_JP.txt         # Original font license (JP,others)
-└── README.md                 # Documentation
+├── _locales/                 # Localization files
+│   ├── en/messages.json      # English
+│   ├── zh_CN/messages.json   # Simplified Chinese
+│   ├── zh_TW/messages.json   # Traditional Chinese
+│   ├── ja/messages.json      # Japanese
+│   └── ko/messages.json      # Korean
+├── manifest.json             # Extension configuration
+├── content.css               # CSS rules (icon protection, targeted replacement)
+├── content.js                # Content script (main logic)
+├── popup.html                # Popup UI
+├── popup.js                  # Popup logic
+├── preview.html              # UI preview page
+├── preview.js                # Preview mode chrome API mock
+├── test-content-font.html    # Targeted replacement test page
+├── test-font-switch.html     # Font loading test page
+├── test-font-switch.js       # Font loading test script
+└── README.md
 ```
 
 ## Technical Implementation
 
-- Uses Manifest V3 specification
-- Injects CSS and JavaScript through content scripts
-- Uses MutationObserver to monitor DOM changes
-- Supports dynamic enable/disable functionality
-- Uses Chrome Storage API to save settings
-
-## Notes
-
-- The plugin will forcibly override the font settings of all web pages.
-- Some special websites may require a page refresh to take full effect.
-- If you encounter font display issues, you can disable the function via the plugin icon.
+- Manifest V3
+- Content scripts inject CSS and JavaScript
+- `MutationObserver` monitors DOM changes
+- `getComputedStyle` checks element font-family
+- `data-force-font` attribute marks elements for replacement
+- Chrome Storage API for settings persistence
+- CSS `@layer` support for priority management
 
 ## Compatibility
 
-- Supports Chrome version 88+.
-- Supports Chromium-based browsers (e.g., Edge, Opera, etc.).
+- Chrome 88+
+- Chromium-based browsers (Edge, Opera, Brave, etc.)
 
 ## License
 

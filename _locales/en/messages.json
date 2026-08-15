@@ -1,42 +1,42 @@
 {
   "extensionName": {
-    "message": "Font Forcer",
+    "message": "Font Standardizer",
     "description": "Extension name"
   },
   "extensionDescription": {
-    "message": "Force web pages to use KleeOne-Regular font with automatic dark mode support",
+    "message": "Enforce system font standards on web pages, replacing non-standard fonts with system-ui",
     "description": "Extension description"
   },
   "headerTitle": {
-    "message": "Font Forcer",
+    "message": "Font Standardizer",
     "description": "Main title in popup"
   },
   "headerSubtitle": {
-    "message": "Font Force Extension",
+    "message": "System Font Standard",
     "description": "Subtitle in popup"
   },
   "currentFont": {
-    "message": "Current Font",
+    "message": "Standard Font",
     "description": "Current font label"
   },
   "fontName": {
-    "message": "KleeOne-Regular",
+    "message": "system-ui",
     "description": "Font name"
   },
   "forceFont": {
-    "message": "Force Font",
+    "message": "Standardize Font",
     "description": "Force font toggle label"
   },
   "forceFontDesc": {
-    "message": "Apply specified font to all web pages",
+    "message": "Enforce system font standards on web pages",
     "description": "Force font toggle description"
   },
   "statusEnabled": {
-    "message": "Font forcing enabled",
+    "message": "Font standardization enabled",
     "description": "Status when font forcing is enabled"
   },
   "statusDisabled": {
-    "message": "Font forcing disabled",
+    "message": "Font standardization disabled",
     "description": "Status when font forcing is disabled"
   },
   "version": {
@@ -52,11 +52,11 @@
     "description": "Browser compatibility text"
   },
   "enableFontForce": {
-    "message": "Enable font forcing",
+    "message": "Enable font standardization",
     "description": "Enable font force aria label"
   },
   "disableFontForce": {
-    "message": "Disable font forcing",
+    "message": "Disable font standardization",
     "description": "Disable font force aria label"
   },
   "languageSettings": {
