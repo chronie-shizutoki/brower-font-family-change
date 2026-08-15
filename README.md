@@ -4,8 +4,7 @@ A Chrome browser extension that replaces specified Chinese fonts (Microsoft YaHe
 
 ## Features
 
-- Targeted replacement: only replaces elements using specified fonts (微软雅黑/等线/小米字体/苹果字体 etc.), leaving other fonts untouched
-- Icon protection: automatically preserves Font Awesome, Material Icons, Google Symbols, and other icon fonts
+- Targeted replacement: only replaces elements using specified fonts, leaving other fonts untouched
 - Real-time monitoring: watches DOM changes and applies replacement to dynamically loaded content
 - Multi-language support: UI available in Simplified Chinese, Traditional Chinese, English, Japanese, and Korean
 - Enable/disable toggle via extension popup
@@ -59,6 +58,7 @@ The following fonts are replaced with `system-ui`:
 - **PMingLiU** / 新細明體
 - **MingLiU** / 細明體
 - **DFKai-SB** / 標楷體
+...
 
 To add or remove target fonts, edit the `targetFonts` array in `content.js`.
 
@@ -76,11 +76,6 @@ To add or remove target fonts, edit the `targetFonts` array in `content.js`.
 ├── content.js                # Content script (main logic)
 ├── popup.html                # Popup UI
 ├── popup.js                  # Popup logic
-├── preview.html              # UI preview page
-├── preview.js                # Preview mode chrome API mock
-├── test-content-font.html    # Targeted replacement test page
-├── test-font-switch.html     # Font loading test page
-├── test-font-switch.js       # Font loading test script
 └── README.md
 ```
 

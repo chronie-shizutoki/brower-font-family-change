@@ -1,22 +1,7 @@
 /* Font standardization - only elements using target fonts are replaced with system-ui */
-/* All styling is handled by content.js which marks elements with data-force-font attribute */
+/* All target-font matching is handled by content.js which marks elements with data-force-font attribute */
 
 /* Targeted font replacement rule */
 [data-force-font] {
-    font-family: system-ui, sans-serif !important;
-}
-
-/* Language-specific font classes (custom loaded fonts) */
-.font-zh_CN, .font-ko,
-/* fix for website geshin-cloud */
-.lang-zh-cn.font-full, .lang-zh-cn.font-full *, .lang-zh-cn.font-full :after, .lang-zh-cn.font-full :before, .useCloudFont {
-    font-family: system-ui, sans-serif !important;
-}
-
-.font-zh_TW {
-    font-family: system-ui, sans-serif !important;
-}
-
-.font-ja, .font-en {
     font-family: system-ui, sans-serif !important;
 }
